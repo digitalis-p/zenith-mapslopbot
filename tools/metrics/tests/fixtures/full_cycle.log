@@ -1,0 +1,100 @@
+[2026/01/02 10:00:00] [Proxy] [INFO] Starting ZenithProxy-3.7.2+java.1.21.4
+[2026/01/02 10:00:01] [Plugin.mapart] [INFO] Map art plugin 0.1.0 (abc1234) loaded (built 2026-01-02 09:59 UTC; builder on, data in plugins/mapart)
+[2026/01/02 10:00:05] [Client] [INFO] Connecting to localhost:25565...
+[2026/01/02 10:00:10] [Plugin.mapart] [INFO] bot ticks starting (IDLE)
+[2026/01/02 10:00:10] [Plugin.mapart] [INFO] engine ready (idle)
+[2026/01/02 10:01:00] [Plugin.mapart] [INFO] Map art job j0007 "testart" queued by Tester: 2x1 tiles
+[2026/01/02 10:01:00] [Plugin.mapart] [INFO] phase IDLE -> SELECT
+[2026/01/02 10:01:00] [Plugin.mapart] [INFO] selected #j0007 testart [0,0] on platform moss (1000 blocks)
+[2026/01/02 10:01:00] [Plugin.mapart] [INFO] [mapart] Started testart: #j0007 testart [0,0] on platform moss: 1000 blocks (map 1 of 2)
+[2026/01/02 10:01:00] [Plugin.mapart] [INFO] phase SELECT -> INSPECT (#j0007 testart [0,0])
+[2026/01/02 10:01:05] [Plugin.mapart] [INFO] platform moss is clear
+[2026/01/02 10:01:05] [Plugin.mapart] [INFO] phase INSPECT -> STOCK_CHECK (#j0007 testart [0,0])
+[2026/01/02 10:02:05] [Plugin.mapart] [INFO] phase STOCK_CHECK -> GEAR (#j0007 testart [0,0])
+[2026/01/02 10:02:15] [Plugin.mapart] [INFO] phase GEAR -> RESTOCK (#j0007 testart [0,0])
+[2026/01/02 10:02:15] [Plugin.mapart] [INFO] making room: {minecraft:red_carpet=10} not used by the next 2 lanes; without them the load covers 500 cells instead of 300
+[2026/01/02 10:02:15] [Plugin.mapart] [INFO] dropping {minecraft:red_carpet=10} into [7,60,8] (standing at [7,64,9])
+[2026/01/02 10:02:20] [Plugin.mapart] [INFO] crowded load: {minecraft:blue_carpet=40} carried for later lanes hold 3 slots; without them the load covers 400 cells instead of 200: returning them
+[2026/01/02 10:02:20] [Plugin.mapart] [INFO] restock: 4 lanes left, load covers 1 + 100 cells of the next, withdraw {minecraft:white_carpet=300, minecraft:black_carpet=50}
+[2026/01/02 10:03:00] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0007 testart [0,0])
+[2026/01/02 10:03:00] [MapArt-Bot] [INFO] Lane 0: walking line walled by full blocks; 250 cells from stand spots
+[2026/01/02 10:03:30] [Plugin.mapart] [INFO] [mapart] Frequent setbacks: 10 small server teleports in 300s (last 0.0 blocks). Possible lag or anti-cheat flags; still building.
+[2026/01/02 10:03:31] [Plugin.mapart] [WARN] backing off: standing still for 5 s (BUILD): 5 server setbacks in 1.2 s (last 0.0 blocks); then escape rung 1 of 3 from 3,64,-7
+[2026/01/02 10:03:31] [Plugin.mapart] [INFO] [mapart] Backing off: 5 server setbacks in 1.2 s (last 0.0 blocks). Standing still for 5 s, then stepping away (escape 1 of 3).
+[2026/01/02 10:03:36] [Plugin.mapart] [INFO] back-off over; carrying on in BUILD
+[2026/01/02 10:03:36] [Plugin.mapart] [WARN] escape rung 1 of 3 at 3,64,-7: stepping away from where the server kept setting the bot back (keeping away from 3,64,-7), then BUILD carries on
+[2026/01/02 10:03:40] [Plugin.mapart] [INFO] escape rung 1 of 3 done: escape; carrying on in BUILD
+[2026/01/02 10:03:40] [MapArt-Bot] [INFO] Lane 0: walking line walled by full blocks; 250 cells from stand spots
+[2026/01/02 10:05:00] [MapArt-Bot] [INFO] Lane 0: 250 placed, 0 skipped of 250 in 2400 ticks; clicks 252: 248 confirmed, 1 late, 3 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=248, late=1, rejected=3, unknown=0, rtt=3t]; 250 from 20 stand spots
+[2026/01/02 10:05:10] [MapArt-Bot] [INFO] Lane 1: 3 cells to place from stand spots (2 passed out of reach by the walk)
+[2026/01/02 10:06:00] [MapArt-Bot] [INFO] Lane 1: 150 placed, 100 skipped of 250 in 1000 ticks; clicks 150: 150 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=398, late=1, rejected=3, unknown=0, rtt=3t]; 3 from 2 stand spots
+[2026/01/02 10:06:00] [Plugin.mapart] [INFO] build round: 2 lanes run (1 short of items: 100 cells skipped for a missing item), 0 not run for lack of items, 400 placed, load used up
+[2026/01/02 10:06:00] [Plugin.mapart] [INFO] phase BUILD -> RESTOCK (#j0007 testart [0,0])
+[2026/01/02 10:06:00] [Plugin.mapart] [INFO] restock: 3 lanes left, load covers 2, withdraw {minecraft:white_carpet=500}
+[2026/01/02 10:07:00] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0007 testart [0,0])
+[2026/01/02 10:08:00] [MapArt-Bot] [INFO] Lane 1: 100 placed, 0 skipped of 100 in 1100 ticks; clicks 100: 100 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=498, late=1, rejected=3, unknown=0, rtt=3t]
+[2026/01/02 10:09:00] [MapArt-Bot] [INFO] Lane 2: 250 placed, 0 skipped of 250 in 1150 ticks; clicks 250: 249 confirmed, 0 late, 1 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=747, late=1, rejected=4, unknown=0, rtt=3t]
+[2026/01/02 10:09:00] [Plugin.mapart] [INFO] phase BUILD -> RESTOCK (#j0007 testart [0,0])
+[2026/01/02 10:09:00] [Plugin.mapart] [INFO] restock: 1 lanes left, load covers 1, withdraw {}
+[2026/01/02 10:09:00] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0007 testart [0,0])
+[2026/01/02 10:10:00] [MapArt-Bot] [INFO] Lane 3: 250 placed, 0 skipped of 250 in 1180 ticks; clicks 250: 250 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=997, late=1, rejected=4, unknown=0, rtt=3t]
+[2026/01/02 10:10:00] [Plugin.mapart] [INFO] phase BUILD -> VERIFY (#j0007 testart [0,0])
+[2026/01/02 10:10:00] [Plugin.mapart] [INFO] verify pass 1/4: 2 wrong, 1 missing
+[2026/01/02 10:10:00] [Plugin.mapart] [INFO] breaking 2 wrong blocks
+[2026/01/02 10:10:00] [MapArt-Bot] [INFO] Breaking 2 blocks: 1 tool(s) to their own hotbar slots (minecraft:netherite_pickaxe -> hotbar 7)
+[2026/01/02 10:10:20] [MapArt-Bot] [INFO] Break round (SINGLE) done: 2/2 broken in 40 ticks (20.0/block)
+[2026/01/02 10:10:20] [Plugin.mapart] [INFO] placing 3 missing blocks in 1 lanes
+[2026/01/02 10:10:30] [MapArt-Bot] [INFO] Lane 3: 3 placed, 0 skipped of 3 in 100 ticks; clicks 3: 3 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 3 t; ack p50 4 p95 4 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=1000, late=1, rejected=4, unknown=0, rtt=3t]
+[2026/01/02 10:10:30] [Plugin.mapart] [INFO] #j0007 testart [0,0] verified: 1000 blocks
+[2026/01/02 10:10:30] [Plugin.mapart] [INFO] phase VERIFY -> FILL_MAP (#j0007 testart [0,0])
+[2026/01/02 10:10:31] [Plugin.mapart] [INFO] creating the map at [1,70,2] (attempt 1)
+[2026/01/02 10:10:40] [Plugin.mapart] [INFO] phase FILL_MAP -> CHECK_MAP (#j0007 testart [0,0])
+[2026/01/02 10:10:41] [Plugin.mapart] [INFO] map 12 matches the art
+[2026/01/02 10:10:41] [Plugin.mapart] [INFO] phase CHECK_MAP -> LOCK (#j0007 testart [0,0])
+[2026/01/02 10:11:00] [Plugin.mapart] [INFO] map locked (13)
+[2026/01/02 10:11:00] [Plugin.mapart] [INFO] phase LOCK -> RENAME (#j0007 testart [0,0])
+[2026/01/02 10:11:10] [Plugin.mapart] [INFO] map renamed to "testart 0,0"
+[2026/01/02 10:11:10] [Plugin.mapart] [INFO] phase RENAME -> STORE (#j0007 testart [0,0])
+[2026/01/02 10:11:15] [Plugin.mapart] [INFO] #j0007 testart [0,0] stored in [4,71,5]
+[2026/01/02 10:11:15] [Plugin.mapart] [INFO] phase STORE -> COUNT (#j0007 testart [0,0])
+[2026/01/02 10:11:15] [Plugin.mapart] [INFO] [mapart] Map done: testart 0,0: #j0007 testart, tile 0,0 on moss, map #13
+1 of 2 maps done, this one took 10 min
+Output chest 4,71,5
+[2026/01/02 10:11:15] [Plugin.mapart] [INFO] map counter pressed for #j0007 testart [0,0]: button 6,72,6 clicked from 6,71,7
+[2026/01/02 10:11:20] [Plugin.mapart] [INFO] phase COUNT -> NUKE (#j0007 testart [0,0])
+[2026/01/02 10:11:20] [Plugin.mapart] [INFO] item collection on moss -> ON
+[2026/01/02 10:11:25] [Plugin.mapart] [INFO] nuking 100 blocks on moss
+[2026/01/02 10:11:25] [MapArt-Bot] [INFO] Breaking 100 blocks: 1 tool(s) to their own hotbar slots (minecraft:netherite_pickaxe -> hotbar 7)
+[2026/01/02 10:12:05] [MapArt-Bot] [INFO] Break round (DOUBLE) done: 100/100 broken in 800 ticks (8.0/block; mining 5.5/block vs vanilla single 4.9/block); 40 pairs, 20 singles (10 instant); delayed 0/0 broken, 0 timed out
+[2026/01/02 10:12:05] [Plugin.mapart] [INFO] phase NUKE -> CLEAR (#j0007 testart [0,0])
+[2026/01/02 10:12:05] [Plugin.mapart] [INFO] clear on moss (attempt 1): going to press BUTTON 9,75,9
+[2026/01/02 10:12:30] [Plugin.mapart] [INFO] phase CLEAR -> WAIT_CLEAR (#j0007 testart [0,0])
+[2026/01/02 10:13:30] [Plugin.mapart] [INFO] platform moss clear 60.0 s after the clear was pressed (art layer read all air)
+[2026/01/02 10:13:30] [Plugin.mapart] [INFO] phase WAIT_CLEAR -> FINISH_TILE (#j0007 testart [0,0])
+[2026/01/02 10:13:30] [Plugin.mapart] [INFO] item collection on moss -> OFF
+[2026/01/02 10:13:40] [Plugin.mapart] [INFO] phase FINISH_TILE -> SELECT (#j0007 testart [0,0])
+[2026/01/02 10:13:40] [Plugin.mapart] [INFO] selected #j0007 testart [1,0] on platform moss (800 blocks)
+[2026/01/02 10:13:40] [Plugin.mapart] [INFO] phase SELECT -> INSPECT (#j0007 testart [1,0])
+[2026/01/02 10:13:45] [Plugin.mapart] [INFO] phase INSPECT -> STOCK_CHECK (#j0007 testart [1,0])
+[2026/01/02 10:14:00] [Plugin.mapart] [INFO] phase STOCK_CHECK -> GEAR (#j0007 testart [1,0])
+[2026/01/02 10:14:00] [Plugin.mapart] [INFO] phase GEAR -> RESTOCK (#j0007 testart [1,0])
+[2026/01/02 10:14:00] [Plugin.mapart] [INFO] restock: 2 lanes left, load covers 2, withdraw {minecraft:white_carpet=800}
+[2026/01/02 10:15:00] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0007 testart [1,0])
+[2026/01/02 10:17:00] [MapArt-Bot] [INFO] Lane 4: 400 placed, 0 skipped of 400 in 2300 ticks; clicks 400: 400 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=1400, late=1, rejected=4, unknown=0, rtt=3t]
+[2026/01/02 10:19:00] [MapArt-Bot] [INFO] Lane 5: 400 placed, 0 skipped of 400 in 2310 ticks; clicks 400: 400 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=1800, late=1, rejected=4, unknown=0, rtt=3t]
+[2026/01/02 10:19:00] [Plugin.mapart] [INFO] phase BUILD -> VERIFY (#j0007 testart [1,0])
+[2026/01/02 10:19:00] [Plugin.mapart] [INFO] #j0007 testart [1,0] verified: 800 blocks
+[2026/01/02 10:19:00] [Plugin.mapart] [INFO] phase VERIFY -> FILL_MAP (#j0007 testart [1,0])
+[2026/01/02 10:19:10] [Plugin.mapart] [INFO] phase FILL_MAP -> CHECK_MAP (#j0007 testart [1,0])
+[2026/01/02 10:19:10] [Plugin.mapart] [INFO] phase CHECK_MAP -> LOCK (#j0007 testart [1,0])
+[2026/01/02 10:19:30] [Plugin.mapart] [INFO] phase LOCK -> RENAME (#j0007 testart [1,0])
+[2026/01/02 10:19:40] [Plugin.mapart] [INFO] phase RENAME -> STORE (#j0007 testart [1,0])
+[2026/01/02 10:19:45] [Plugin.mapart] [INFO] #j0007 testart [1,0] stored in [4,71,5]
+[2026/01/02 10:19:45] [Plugin.mapart] [INFO] phase STORE -> NUKE (#j0007 testart [1,0])
+[2026/01/02 10:19:50] [Plugin.mapart] [INFO] phase NUKE -> CLEAR (#j0007 testart [1,0])
+[2026/01/02 10:20:10] [Plugin.mapart] [INFO] phase CLEAR -> WAIT_CLEAR (#j0007 testart [1,0])
+[2026/01/02 10:21:10] [Plugin.mapart] [INFO] phase WAIT_CLEAR -> FINISH_TILE (#j0007 testart [1,0])
+[2026/01/02 10:21:20] [Plugin.mapart] [INFO] job j0007 DONE
+[2026/01/02 10:21:20] [Plugin.mapart] [INFO] phase FINISH_TILE -> SELECT
+[2026/01/02 10:21:20] [Plugin.mapart] [INFO] phase SELECT -> IDLE
+[2026/01/02 10:30:00] [Chat] [INFO] <Someone> hello

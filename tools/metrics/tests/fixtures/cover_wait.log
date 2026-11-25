@@ -1,0 +1,44 @@
+[2026/01/05 12:00:00] [Proxy] [INFO] Starting ZenithProxy-3.7.2+java.1.21.4
+[2026/01/05 12:00:01] [Plugin.mapart] [INFO] Map art plugin 0.1.0 (fff6666) loaded (built 2026-01-05 11:59 UTC; builder on, data in plugins/mapart)
+[2026/01/05 12:00:10] [Plugin.mapart] [INFO] bot ticks starting (IDLE)
+[2026/01/05 12:00:10] [Plugin.mapart] [INFO] engine ready (idle)
+[2026/01/05 12:00:20] [Plugin.mapart] [INFO] phase IDLE -> SELECT
+[2026/01/05 12:00:20] [Plugin.mapart] [INFO] selected #j0005 covered [0,0] on platform moss (300 blocks)
+[2026/01/05 12:00:20] [Plugin.mapart] [INFO] phase SELECT -> INSPECT (#j0005 covered [0,0])
+[2026/01/05 12:00:25] [Plugin.mapart] [INFO] phase INSPECT -> STOCK_CHECK (#j0005 covered [0,0])
+[2026/01/05 12:00:30] [Plugin.mapart] [INFO] phase STOCK_CHECK -> GEAR (#j0005 covered [0,0])
+[2026/01/05 12:00:30] [Plugin.mapart] [INFO] phase GEAR -> RESTOCK (#j0005 covered [0,0])
+[2026/01/05 12:00:30] [Plugin.mapart] [INFO] restock: 1 lanes left, load covers 1, withdraw {minecraft:white_carpet=300}
+[2026/01/05 12:01:00] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0005 covered [0,0])
+[2026/01/05 12:05:00] [MapArt-Bot] [INFO] Lane 0: 300 placed, 0 skipped of 300 in 4600 ticks; clicks 300: 300 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=300, late=0, rejected=0, unknown=0, rtt=3t]
+[2026/01/05 12:05:00] [Plugin.mapart] [INFO] phase BUILD -> VERIFY (#j0005 covered [0,0])
+[2026/01/05 12:05:00] [Plugin.mapart] [INFO] #j0005 covered [0,0] verified: 300 blocks
+[2026/01/05 12:05:00] [Plugin.mapart] [INFO] phase VERIFY -> FILL_MAP (#j0005 covered [0,0])
+[2026/01/05 12:05:00] [Plugin.mapart] [WARN] #j0005 covered [0,0]: 120 pixels covered by blocks at y80 (e.g. white_concrete); waiting at the map centre until they are gone
+[2026/01/05 12:05:00] [Plugin.mapart] [INFO] [mapart] Waiting for the platform above: #j0005 covered [0,0]: Waiting for the platform above: 120 pixels covered by blocks at y80 (e.g. white_concrete). The map is held and will be locked only when it matches.
+[2026/01/05 12:05:00] [Plugin.mapart] [INFO] #j0005 covered [0,0]: creating the map to hold while the art is covered (not a fill attempt)
+[2026/01/05 12:10:00] [Plugin.mapart] [INFO] keep-alive: idle 60 s in FILL_MAP (Waiting: platform above in use (120 pixels covered)); swinging every 60 s
+[2026/01/05 12:15:00] [Client] [INFO] Disconnected: io.netty.channel.unix.Errors$NativeIoException: recvAddress(..) failed with error(-104): Connection reset by peer
+[2026/01/05 12:15:00] [Plugin.mapart] [INFO] bot ticks stopped (FILL_MAP)
+[2026/01/05 12:16:00] [Plugin.mapart] [INFO] bot ticks starting (FILL_MAP, #j0005 covered [0,0])
+[2026/01/05 12:16:03] [Plugin.mapart] [INFO] #j0005 covered [0,0]: creating the map to hold while the art is covered (not a fill attempt)
+[2026/01/05 12:20:00] [Plugin.mapart] [INFO] #j0005 covered [0,0]: nothing above the art any more after 900 s; filling the map
+[2026/01/05 12:20:30] [Plugin.mapart] [INFO] #j0005 covered [0,0]: covered again 30 s after it cleared: the wait goes on (15 min): 10 pixels covered by blocks at y80 (e.g. white_concrete)
+[2026/01/05 12:22:00] [Plugin.mapart] [INFO] #j0005 covered [0,0]: nothing above the art any more after 1020 s; filling the map
+[2026/01/05 12:22:00] [Plugin.mapart] [INFO] #j0005 covered [0,0]: 2 of 4 eyeblossoms are open; waiting up to 30 min at the map centre
+[2026/01/05 12:25:00] [Plugin.mapart] [INFO] eyeblossoms are closed after 180 s; filling the map
+[2026/01/05 12:25:00] [Plugin.mapart] [INFO] creating the map at [1,70,2] (attempt 1)
+[2026/01/05 12:25:10] [Plugin.mapart] [INFO] phase FILL_MAP -> CHECK_MAP (#j0005 covered [0,0])
+[2026/01/05 12:25:10] [Plugin.mapart] [INFO] map 5 matches the art
+[2026/01/05 12:25:10] [Plugin.mapart] [INFO] phase CHECK_MAP -> LOCK (#j0005 covered [0,0])
+[2026/01/05 12:25:30] [Plugin.mapart] [INFO] phase LOCK -> RENAME (#j0005 covered [0,0])
+[2026/01/05 12:25:40] [Plugin.mapart] [INFO] phase RENAME -> STORE (#j0005 covered [0,0])
+[2026/01/05 12:25:45] [Plugin.mapart] [INFO] #j0005 covered [0,0] stored in [4,71,5]
+[2026/01/05 12:25:45] [Plugin.mapart] [INFO] phase STORE -> NUKE (#j0005 covered [0,0])
+[2026/01/05 12:25:50] [Plugin.mapart] [INFO] phase NUKE -> CLEAR (#j0005 covered [0,0])
+[2026/01/05 12:26:10] [Plugin.mapart] [INFO] phase CLEAR -> WAIT_CLEAR (#j0005 covered [0,0])
+[2026/01/05 12:27:10] [Plugin.mapart] [INFO] phase WAIT_CLEAR -> FINISH_TILE (#j0005 covered [0,0])
+[2026/01/05 12:27:20] [Plugin.mapart] [INFO] job j0005 DONE
+[2026/01/05 12:27:20] [Plugin.mapart] [INFO] phase FINISH_TILE -> SELECT
+[2026/01/05 12:27:20] [Plugin.mapart] [INFO] phase SELECT -> IDLE
+[2026/01/05 12:30:00] [Chat] [INFO] <Someone> done

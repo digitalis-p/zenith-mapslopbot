@@ -1,0 +1,370 @@
+{
+  "_about": "MapArtConfig.site for the MOSS platform (v1) in the LOCAL TEST WORLD. Copy the object without the _ keys into run/plugins/config/mapart.json as \"site\" (install.sh --site does this). Gson ignores the _ keys. Status per value is in _verified.",
+  "_verified": {
+    "platforms[0].minX/minZ/artY/floorBlock": "VERIFIED (survey + worldscan: 16384 moss_block at y172, art layer y173 empty, tile-aligned)",
+    "platforms[0].center": "VERIFIED walkable: middle stand on the y178 glass bridge (feet y179), reached via glass stairs at x-1 z-68..-65",
+    "platforms[0].clear": "MEASURED (docs/TESTING.md section 8): two middle buttons, each wired to one side. Only the button on the side where the flying machines are parked launches them (~70 s full clear); they then park on the other side. The probe (a slime block of the parked machines) tells the sides apart, so the engine presses exactly one per clear.",
+    "storage.materialRegions": "VERIFIED geometry (moss sorter: 62 columns, double chests y174-178 + y179 top row). Region stops at y178: the y179 row cannot be reached from the walkway (measured live 2026-10-10: 62/62 scans failed).",
+    "storage.mapChests/paneChests/outputChests/xpChests/anvilChests/toolChests/foodChests": "VERIFIED by the owner's signs in the world download of 2026-10-11: supply column at x=52, chests facing east, one sign on each chest's east face. maps = single chest (52,174,-71); output = single chest (52,175,-71); anvils / xp / glass panes / food / tools = double chests (z -73 and -72) at y174 / 175 / 176 / 177 / 178, listed by their signed half (z -72). Contents were not captured by the download. TEST WORLD: these chests exist only after the supply-chest import (it is not part of the old download).",
+    "storage (standing spot)": "No standing position for chests in the schema: the bot pathfinds next to each chest. From (55,174,-72) (feet; floor polished_blackstone y173) every role chest and the anvil are within reach 4.3 (eye-to-nearest-point <= 3.45), and all except the output chest have a clear line of sight (the 'output' and 'xp' signs cover it; the bot steps about 2 blocks south for it unless the output sign is moved off the chest's east face).",
+    "storage.bootChests/returnChests": "TEST WORLD ONLY, not re-signed by the owner (kept from before): the boots chest is added by local/world-edits.moss.txt (no such chest on 2b2t); returnChests is empty, leftovers go to returnDrops.",
+    "cartographyTable/anvil": "cartographyTable: unchanged (2,174,-72), the only cartography table near base level (survey + 2026-10-11 download), about 50 blocks west of the supply column. anvil: bottom of the NEW 4-high anvil tower next to the supply column (bottom (52,175,-74), anvils y175..178 on a crafting table; 2026-10-11 download). The old 5-high tower (bottom (3,175,-72)) still exists.",
+    "platforms[0].collectionOn/Off/Indicator": "MEASURED: note blocks toggled by right-click (On / Off), state on the redstone lamp between them (lit = ON). Any middle clear button also switches collection ON. Hopper minecarts are missing from the download.",
+    "storage.returnDrops": "TEST WORLD + owner decision: no return chest on the moss level. The bot stands on the walkway west end and throws leftovers over the 1-high glass railing into the open water column west of the platform (source at the target), which flows north into the channel under the walkway, to the bubble elevator and the moss sorter stream. Verify live.",
+    "noGoZones": "Phase 0 colour-suppression guards (2026-10-11), from the colour-suppression study (world scans of both downloads): the moss bot never enters or stands in these boxes. 1: the muncher rail field with the start rail, hop rails, launch button, glass bumpers and booth (study P0-2 box). 2: everything at y198+ around the moss tile: both glass layers (y200, y214), the art volumes, the between-layer and y220-235 machinery, the east tile (top-layer units, drop bin, TNT dupers and levers, collection lift), the CS sorter and the top walkways. 3: the bubble elevator shaft above the moss level (its y174 entrance is next to the moss walkway). 4-5: the stasis chunk-loader cells (pearls, trapdoors) under both tiles. None overlaps the moss platform, its centre, actuators or supply chests (mapart site checks this).",
+    "protectedRegions": "Phase 0 (2026-10-11): blocks here are never broken, pressed, opened or placed into, whatever the block (position protection for machinery made of art blocks: redstone blocks, decorated pots y195+, white concrete, TNT, iron trapdoors). Same areas as the no-go zones, from y195 for the pots; the elevator box also holds its entrance trapdoors at the moss level. The redstone parts themselves (tripwire, note blocks, buttons, torches, wire, repeaters, skulls) are protected by type everywhere (Defaults.MACHINERY_BLOCKS).",
+    "mapCounter/mapCounterColumn": "owner 2026-10-11: after each successfully finished map (each map id) press the base's map counter button. Only its x and z were given; the button was added after the world downloads, so its y is found at run time: the one block ending in _button in that column, from 6 below to 6 above the output chest's y. None or several: one alert, nothing pressed (set mapCounter.pos then). The 2026-10-11 download has an oak_button one block west of this column, the 'map-art counter' in _doNotPress; if the alert names it as the button beside the column and it is the counter, set mapCounter.pos to it. Pressed once per stored map, in COUNT right after STORE."
+  },
+  "_doNotPress": [
+    {
+      "x": -1,
+      "y": 179,
+      "z": 0,
+      "why": "Snow Fill (south middle button)"
+    }
+  ],
+  "dimension": "minecraft:overworld",
+  "platforms": [
+    {
+      "id": "moss",
+      "kind": "MOSS",
+      "enabled": true,
+      "minX": -64,
+      "minZ": -64,
+      "artY": 173,
+      "floorBlock": "minecraft:moss_block",
+      "center": {
+        "x": -1,
+        "y": 179,
+        "z": -2
+      },
+      "clear": [
+        {
+          "pos": {
+            "x": 1,
+            "y": 179,
+            "z": -2
+          },
+          "mode": "BUTTON",
+          "holdTicks": 0,
+          "standAt": {
+            "x": -1,
+            "y": 179,
+            "z": -2
+          },
+          "probe": {
+            "x": 71,
+            "y": 173,
+            "z": -63
+          },
+          "probeBlock": "minecraft:slime_block"
+        },
+        {
+          "pos": {
+            "x": -3,
+            "y": 179,
+            "z": -2
+          },
+          "mode": "BUTTON",
+          "holdTicks": 0,
+          "standAt": {
+            "x": -1,
+            "y": 179,
+            "z": -2
+          },
+          "probe": {
+            "x": -72,
+            "y": 173,
+            "z": -63
+          },
+          "probeBlock": "minecraft:slime_block"
+        }
+      ],
+      "collectionOn": {
+        "pos": {
+          "x": 66,
+          "y": 175,
+          "z": -67
+        },
+        "mode": "BUTTON",
+        "holdTicks": 0,
+        "standAt": {
+          "x": 65,
+          "y": 174,
+          "z": -68
+        }
+      },
+      "collectionOff": {
+        "pos": {
+          "x": 66,
+          "y": 175,
+          "z": -69
+        },
+        "mode": "BUTTON",
+        "holdTicks": 0,
+        "standAt": {
+          "x": 65,
+          "y": 174,
+          "z": -68
+        }
+      },
+      "collectionIndicator": {
+        "x": 66,
+        "y": 175,
+        "z": -68
+      },
+      "collectionIndicatorOn": "minecraft:redstone_lamp[lit=true]",
+      "collectionRunAfterClearSeconds": 30,
+      "collectionQuietSeconds": 3,
+      "clearTimeoutSeconds": 180,
+      "clearRetries": 2,
+      "stayDuringClear": true,
+      "soulSpeedBoots": false
+    }
+  ],
+  "storage": {
+    "materialRegions": [
+      {
+        "min": {
+          "x": -64,
+          "y": 174,
+          "z": -73
+        },
+        "max": {
+          "x": -3,
+          "y": 178,
+          "z": -71
+        }
+      }
+    ],
+    "returnChests": [],
+    "returnDrops": [
+      {
+        "standAt": {
+          "x": -65,
+          "y": 174,
+          "z": -66
+        },
+        "target": {
+          "x": -65,
+          "y": 170,
+          "z": -62
+        }
+      }
+    ],
+    "mapChests": [
+      {
+        "x": 52,
+        "y": 174,
+        "z": -71
+      }
+    ],
+    "paneChests": [
+      {
+        "x": 52,
+        "y": 176,
+        "z": -72
+      }
+    ],
+    "outputChests": [
+      {
+        "x": 52,
+        "y": 175,
+        "z": -71
+      }
+    ],
+    "xpChests": [
+      {
+        "x": 52,
+        "y": 175,
+        "z": -72
+      }
+    ],
+    "anvilChests": [
+      {
+        "x": 52,
+        "y": 174,
+        "z": -72
+      }
+    ],
+    "toolChests": [
+      {
+        "x": 52,
+        "y": 178,
+        "z": -72
+      }
+    ],
+    "foodChests": [
+      {
+        "x": 52,
+        "y": 177,
+        "z": -72
+      }
+    ],
+    "bootChests": [
+      {
+        "x": 6,
+        "y": 174,
+        "z": -68
+      }
+    ]
+  },
+  "cartographyTable": {
+    "x": 2,
+    "y": 174,
+    "z": -72
+  },
+  "anvil": {
+    "x": 52,
+    "y": 175,
+    "z": -74
+  },
+  "mapCounter": {
+    "mode": "BUTTON",
+    "pos": {
+      "x": 49,
+      "y": 175,
+      "z": -70
+    }
+  },
+  "_supplyStandAt": {
+    "x": 55,
+    "y": 174,
+    "z": -72,
+    "why": "Documentation only (not read by the plugin): the spot the owner named for reaching all supply chests and the anvil."
+  },
+  "noGoZones": [
+    {
+      "name": "muncher: rail field, start rail and launch button, booth",
+      "min": {
+        "x": -194,
+        "y": 218,
+        "z": -54
+      },
+      "max": {
+        "x": -63,
+        "y": 235,
+        "z": 55
+      }
+    },
+    {
+      "name": "colour-suppression layers and machinery over the moss tile, east tile, CS sorter, top walkways",
+      "min": {
+        "x": -74,
+        "y": 198,
+        "z": -74
+      },
+      "max": {
+        "x": 80,
+        "y": 245,
+        "z": 71
+      }
+    },
+    {
+      "name": "bubble elevator shaft up to the suppression platform",
+      "min": {
+        "x": 67,
+        "y": 171,
+        "z": -74
+      },
+      "max": {
+        "x": 68,
+        "y": 216,
+        "z": -73
+      }
+    },
+    {
+      "name": "stasis chunk loaders under the moss tile",
+      "min": {
+        "x": -66,
+        "y": 155,
+        "z": -65
+      },
+      "max": {
+        "x": 80,
+        "y": 164,
+        "z": 65
+      }
+    },
+    {
+      "name": "stasis chunk loaders under the muncher",
+      "min": {
+        "x": -192,
+        "y": 155,
+        "z": -49
+      },
+      "max": {
+        "x": -96,
+        "y": 164,
+        "z": 63
+      }
+    }
+  ],
+  "protectedRegions": [
+    {
+      "name": "muncher: rails, tripwires, observers, start rail, launch button, redstone blocks, booth",
+      "min": {
+        "x": -194,
+        "y": 195,
+        "z": -54
+      },
+      "max": {
+        "x": -63,
+        "y": 240,
+        "z": 55
+      }
+    },
+    {
+      "name": "suppression machinery: glass layers, wire, repeaters, skulls, pots, TNT dupers and levers, drop bin, CS sorter",
+      "min": {
+        "x": -74,
+        "y": 195,
+        "z": -74
+      },
+      "max": {
+        "x": 80,
+        "y": 245,
+        "z": 71
+      }
+    },
+    {
+      "name": "bubble elevator: shaft and its entrance trapdoors",
+      "min": {
+        "x": 66,
+        "y": 171,
+        "z": -74
+      },
+      "max": {
+        "x": 68,
+        "y": 216,
+        "z": -73
+      }
+    },
+    {
+      "name": "stasis chunk loaders under the moss tile (pearl trapdoors)",
+      "min": {
+        "x": -66,
+        "y": 155,
+        "z": -65
+      },
+      "max": {
+        "x": 80,
+        "y": 164,
+        "z": 65
+      }
+    },
+    {
+      "name": "stasis chunk loaders under the muncher (pearl trapdoors)",
+      "min": {
+        "x": -192,
+        "y": 155,
+        "z": -49
+      },
+      "max": {
+        "x": -96,
+        "y": 164,
+        "z": 63
+      }
+    }
+  ]
+}

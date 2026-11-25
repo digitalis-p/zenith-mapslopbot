@@ -1,0 +1,655 @@
+{
+  "_about": "MapArtConfig.site with BOTH platforms: moss (as in site-config.moss.json) and soul sand (enabled false until verified live). Copy the object without the _ keys into run/plugins/config/mapart.json as \"site\" (install.sh --site FILE does this). The soul sorter is added to the material regions, the soul beacons' Haste to hasteZones, the soul machines to noGoZones and protectedRegions.",
+  "_verified": {
+    "platforms[0].minX/minZ/artY/floorBlock": "VERIFIED (survey + worldscan: 16384 moss_block at y172, art layer y173 empty, tile-aligned)",
+    "platforms[0].center": "VERIFIED walkable: middle stand on the y178 glass bridge (feet y179), reached via glass stairs at x-1 z-68..-65",
+    "platforms[0].clear": "MEASURED (docs/TESTING.md section 8): two middle buttons, each wired to one side. Only the button on the side where the flying machines are parked launches them (~70 s full clear); they then park on the other side. The probe (a slime block of the parked machines) tells the sides apart, so the engine presses exactly one per clear.",
+    "storage.materialRegions": "VERIFIED geometry (moss sorter: 62 columns, double chests y174-178 + y179 top row). Region stops at y178: the y179 row cannot be reached from the walkway (measured live 2026-10-10: 62/62 scans failed).",
+    "storage.mapChests/paneChests/outputChests/xpChests/anvilChests/toolChests/foodChests": "VERIFIED by the owner's signs in the world download of 2026-10-11: supply column at x=52, chests facing east, one sign on each chest's east face. maps = single chest (52,174,-71); output = single chest (52,175,-71); anvils / xp / glass panes / food / tools = double chests (z -73 and -72) at y174 / 175 / 176 / 177 / 178, listed by their signed half (z -72). Contents were not captured by the download. TEST WORLD: these chests exist only after the supply-chest import (it is not part of the old download).",
+    "storage (standing spot)": "No standing position for chests in the schema: the bot pathfinds next to each chest. From (55,174,-72) (feet; floor polished_blackstone y173) every role chest and the anvil are within reach 4.3 (eye-to-nearest-point <= 3.45), and all except the output chest have a clear line of sight (the 'output' and 'xp' signs cover it; the bot steps about 2 blocks south for it unless the output sign is moved off the chest's east face).",
+    "storage.bootChests/returnChests": "TEST WORLD ONLY, not re-signed by the owner (kept from before): the boots chest is added by local/world-edits.moss.txt (no such chest on 2b2t); returnChests is empty, leftovers go to returnDrops.",
+    "cartographyTable/anvil": "cartographyTable: unchanged (2,174,-72), the only cartography table near base level (survey + 2026-10-11 download), about 50 blocks west of the supply column. anvil: bottom of the NEW 4-high anvil tower next to the supply column (bottom (52,175,-74), anvils y175..178 on a crafting table; 2026-10-11 download). The old 5-high tower (bottom (3,175,-72)) still exists.",
+    "platforms[0].collectionOn/Off/Indicator": "MEASURED: note blocks toggled by right-click (On / Off), state on the redstone lamp between them (lit = ON). Any middle clear button also switches collection ON. Hopper minecarts are missing from the download.",
+    "storage.returnDrops": "TEST WORLD + owner decision: no return chest on the moss level. The bot stands on the walkway west end and throws leftovers over the 1-high glass railing into the open water column west of the platform (source at the target), which flows north into the channel under the walkway, to the bubble elevator and the moss sorter stream. Verify live.",
+    "noGoZones": "Phase 0 colour-suppression guards (2026-10-11), from the colour-suppression study (world scans of both downloads): the moss bot never enters or stands in these boxes. 1: the muncher rail field with the start rail, hop rails, launch button, glass bumpers and booth (study P0-2 box). 2: everything at y198+ around the moss tile: both glass layers (y200, y214), the art volumes, the between-layer and y220-235 machinery, the east tile (top-layer units, drop bin, TNT dupers and levers, collection lift), the CS sorter and the top walkways. 3: the bubble elevator shaft above the moss level (its y174 entrance is next to the moss walkway). 4-5: the stasis chunk-loader cells (pearls, trapdoors) under both tiles. None overlaps the moss platform, its centre, actuators or supply chests (mapart site checks this).",
+    "protectedRegions": "Phase 0 (2026-10-11): blocks here are never broken, pressed, opened or placed into, whatever the block (position protection for machinery made of art blocks: redstone blocks, decorated pots y195+, white concrete, TNT, iron trapdoors). Same areas as the no-go zones, from y195 for the pots; the elevator box also holds its entrance trapdoors at the moss level. The redstone parts themselves (tripwire, note blocks, buttons, torches, wire, repeaters, skulls) are protected by type everywhere (Defaults.MACHINERY_BLOCKS).",
+    "mapCounter/mapCounterColumn": "owner 2026-10-11: after each successfully finished map (each map id) press the base's map counter button. Only its x and z were given; the button was added after the world downloads, so its y is found at run time: the one block ending in _button in that column, from 6 below to 6 above the output chest's y. None or several: one alert, nothing pressed (set mapCounter.pos then). The 2026-10-11 download has an oak_button one block west of this column, the 'map-art counter' in _doNotPress; if the alert names it as the button beside the column and it is the counter, set mapCounter.pos to it. Pressed once per stored map, in COUNT right after STORE."
+  },
+  "_doNotPress": [
+    {
+      "x": -1,
+      "y": 179,
+      "z": 0,
+      "why": "Snow Fill (south middle button)"
+    }
+  ],
+  "dimension": "minecraft:overworld",
+  "platforms": [
+    {
+      "id": "moss",
+      "kind": "MOSS",
+      "enabled": true,
+      "minX": -64,
+      "minZ": -64,
+      "artY": 173,
+      "floorBlock": "minecraft:moss_block",
+      "center": {
+        "x": -1,
+        "y": 179,
+        "z": -2
+      },
+      "clear": [
+        {
+          "pos": {
+            "x": 1,
+            "y": 179,
+            "z": -2
+          },
+          "mode": "BUTTON",
+          "holdTicks": 0,
+          "standAt": {
+            "x": -1,
+            "y": 179,
+            "z": -2
+          },
+          "probe": {
+            "x": 71,
+            "y": 173,
+            "z": -63
+          },
+          "probeBlock": "minecraft:slime_block"
+        },
+        {
+          "pos": {
+            "x": -3,
+            "y": 179,
+            "z": -2
+          },
+          "mode": "BUTTON",
+          "holdTicks": 0,
+          "standAt": {
+            "x": -1,
+            "y": 179,
+            "z": -2
+          },
+          "probe": {
+            "x": -72,
+            "y": 173,
+            "z": -63
+          },
+          "probeBlock": "minecraft:slime_block"
+        }
+      ],
+      "collectionOn": {
+        "pos": {
+          "x": 66,
+          "y": 175,
+          "z": -67
+        },
+        "mode": "BUTTON",
+        "holdTicks": 0,
+        "standAt": {
+          "x": 65,
+          "y": 174,
+          "z": -68
+        }
+      },
+      "collectionOff": {
+        "pos": {
+          "x": 66,
+          "y": 175,
+          "z": -69
+        },
+        "mode": "BUTTON",
+        "holdTicks": 0,
+        "standAt": {
+          "x": 65,
+          "y": 174,
+          "z": -68
+        }
+      },
+      "collectionIndicator": {
+        "x": 66,
+        "y": 175,
+        "z": -68
+      },
+      "collectionIndicatorOn": "minecraft:redstone_lamp[lit=true]",
+      "collectionRunAfterClearSeconds": 30,
+      "collectionQuietSeconds": 3,
+      "clearTimeoutSeconds": 180,
+      "clearRetries": 2,
+      "stayDuringClear": true,
+      "soulSpeedBoots": false
+    },
+    {
+      "id": "soulsand",
+      "kind": "SOUL_SAND",
+      "enabled": false,
+      "minX": -320,
+      "minZ": -64,
+      "artY": 173,
+      "floorBlock": "minecraft:soul_sand",
+      "center": {
+        "x": -257,
+        "y": 179,
+        "z": -1
+      },
+      "mapStandAt": {
+        "x": -257,
+        "y": 173,
+        "z": -1
+      },
+      "hopDownTo": {
+        "x": -257,
+        "y": 173,
+        "z": -4
+      },
+      "hopDownMinHealth": 14,
+      "clear": [
+        {
+          "pos": {
+            "x": -255,
+            "y": 179,
+            "z": -1
+          },
+          "mode": "BUTTON",
+          "holdTicks": 0,
+          "standAt": {
+            "x": -257,
+            "y": 179,
+            "z": -1
+          },
+          "probe": {
+            "x": -189,
+            "y": 175,
+            "z": -63
+          },
+          "probeBlock": "minecraft:slime_block"
+        },
+        {
+          "pos": {
+            "x": -258,
+            "y": 179,
+            "z": 0
+          },
+          "mode": "BUTTON",
+          "holdTicks": 0,
+          "standAt": {
+            "x": -257,
+            "y": 179,
+            "z": -1
+          },
+          "probe": {
+            "x": -326,
+            "y": 175,
+            "z": -63
+          },
+          "probeBlock": "minecraft:slime_block"
+        }
+      ],
+      "clearableBlocks": [
+        "minecraft:white_carpet",
+        "minecraft:white_candle",
+        "minecraft:orange_carpet",
+        "minecraft:orange_candle",
+        "minecraft:magenta_carpet",
+        "minecraft:magenta_candle",
+        "minecraft:light_blue_carpet",
+        "minecraft:light_blue_candle",
+        "minecraft:yellow_carpet",
+        "minecraft:yellow_candle",
+        "minecraft:lime_carpet",
+        "minecraft:lime_candle",
+        "minecraft:pink_carpet",
+        "minecraft:pink_candle",
+        "minecraft:gray_carpet",
+        "minecraft:gray_candle",
+        "minecraft:light_gray_carpet",
+        "minecraft:light_gray_candle",
+        "minecraft:cyan_carpet",
+        "minecraft:cyan_candle",
+        "minecraft:purple_carpet",
+        "minecraft:purple_candle",
+        "minecraft:blue_carpet",
+        "minecraft:blue_candle",
+        "minecraft:brown_carpet",
+        "minecraft:brown_candle",
+        "minecraft:green_carpet",
+        "minecraft:green_candle",
+        "minecraft:red_carpet",
+        "minecraft:red_candle",
+        "minecraft:black_carpet",
+        "minecraft:black_candle",
+        "minecraft:moss_carpet",
+        "minecraft:pale_moss_carpet",
+        "minecraft:candle",
+        "minecraft:stone_pressure_plate",
+        "minecraft:polished_blackstone_pressure_plate",
+        "minecraft:light_weighted_pressure_plate",
+        "minecraft:heavy_weighted_pressure_plate",
+        "minecraft:oak_pressure_plate",
+        "minecraft:spruce_pressure_plate",
+        "minecraft:birch_pressure_plate",
+        "minecraft:jungle_pressure_plate",
+        "minecraft:acacia_pressure_plate",
+        "minecraft:dark_oak_pressure_plate",
+        "minecraft:mangrove_pressure_plate",
+        "minecraft:cherry_pressure_plate",
+        "minecraft:bamboo_pressure_plate",
+        "minecraft:crimson_pressure_plate",
+        "minecraft:warped_pressure_plate",
+        "minecraft:pale_oak_pressure_plate",
+        "minecraft:pointed_dripstone",
+        "minecraft:decorated_pot",
+        "minecraft:resin_clump",
+        "minecraft:glow_lichen",
+        "minecraft:birch_leaves"
+      ],
+      "clearTimeoutSeconds": 180,
+      "clearRetries": 2,
+      "stayDuringClear": true,
+      "soulSpeedBoots": true
+    }
+  ],
+  "storage": {
+    "materialRegions": [
+      {
+        "min": {
+          "x": -64,
+          "y": 174,
+          "z": -73
+        },
+        "max": {
+          "x": -3,
+          "y": 178,
+          "z": -71
+        }
+      },
+      {
+        "name": "soul sand sorter, front two rows (opened from the walkway)",
+        "min": {
+          "x": -320,
+          "y": 174,
+          "z": -70
+        },
+        "max": {
+          "x": -195,
+          "y": 175,
+          "z": -69
+        }
+      }
+    ],
+    "returnChests": [],
+    "returnDrops": [
+      {
+        "standAt": {
+          "x": -65,
+          "y": 174,
+          "z": -66
+        },
+        "target": {
+          "x": -65,
+          "y": 170,
+          "z": -62
+        }
+      },
+      {
+        "standAt": {
+          "x": -320,
+          "y": 174,
+          "z": -66
+        },
+        "target": {
+          "x": -321,
+          "y": 172,
+          "z": -61
+        }
+      }
+    ],
+    "mapChests": [
+      {
+        "x": 52,
+        "y": 174,
+        "z": -71
+      }
+    ],
+    "paneChests": [
+      {
+        "x": 52,
+        "y": 176,
+        "z": -72
+      }
+    ],
+    "outputChests": [
+      {
+        "x": 52,
+        "y": 175,
+        "z": -71
+      }
+    ],
+    "xpChests": [
+      {
+        "x": 52,
+        "y": 175,
+        "z": -72
+      }
+    ],
+    "anvilChests": [
+      {
+        "x": 52,
+        "y": 174,
+        "z": -72
+      }
+    ],
+    "toolChests": [
+      {
+        "x": 52,
+        "y": 178,
+        "z": -72
+      }
+    ],
+    "foodChests": [
+      {
+        "x": 52,
+        "y": 177,
+        "z": -72
+      }
+    ],
+    "bootChests": [
+      {
+        "x": 6,
+        "y": 174,
+        "z": -68
+      }
+    ]
+  },
+  "cartographyTable": {
+    "x": 2,
+    "y": 174,
+    "z": -72
+  },
+  "anvil": {
+    "x": 52,
+    "y": 175,
+    "z": -74
+  },
+  "mapCounter": {
+    "mode": "BUTTON",
+    "pos": {
+      "x": 49,
+      "y": 175,
+      "z": -70
+    }
+  },
+  "_supplyStandAt": {
+    "x": 55,
+    "y": 174,
+    "z": -72,
+    "why": "Documentation only (not read by the plugin): the spot the owner named for reaching all supply chests and the anvil."
+  },
+  "noGoZones": [
+    {
+      "name": "muncher: rail field, start rail and launch button, booth",
+      "min": {
+        "x": -194,
+        "y": 218,
+        "z": -54
+      },
+      "max": {
+        "x": -63,
+        "y": 235,
+        "z": 55
+      }
+    },
+    {
+      "name": "colour-suppression layers and machinery over the moss tile, east tile, CS sorter, top walkways",
+      "min": {
+        "x": -74,
+        "y": 198,
+        "z": -74
+      },
+      "max": {
+        "x": 80,
+        "y": 245,
+        "z": 71
+      }
+    },
+    {
+      "name": "bubble elevator shaft up to the suppression platform",
+      "min": {
+        "x": 67,
+        "y": 171,
+        "z": -74
+      },
+      "max": {
+        "x": 68,
+        "y": 216,
+        "z": -73
+      }
+    },
+    {
+      "name": "stasis chunk loaders under the moss tile",
+      "min": {
+        "x": -66,
+        "y": 155,
+        "z": -65
+      },
+      "max": {
+        "x": 80,
+        "y": 164,
+        "z": 65
+      }
+    },
+    {
+      "name": "stasis chunk loaders under the muncher",
+      "min": {
+        "x": -192,
+        "y": 155,
+        "z": -49
+      },
+      "max": {
+        "x": -96,
+        "y": 164,
+        "z": 63
+      }
+    },
+    {
+      "name": "soul sand machines parked east: pistons, slime, observers, trigger wire and copper bulb",
+      "min": {
+        "x": -192,
+        "y": 173,
+        "z": -64
+      },
+      "max": {
+        "x": -185,
+        "y": 178,
+        "z": 63
+      }
+    },
+    {
+      "name": "soul sand turnaround station west: obsidian stoppers, note blocks, trigger wire and copper bulb",
+      "min": {
+        "x": -328,
+        "y": 173,
+        "z": -64
+      },
+      "max": {
+        "x": -321,
+        "y": 178,
+        "z": 63
+      }
+    },
+    {
+      "name": "stasis chunk loaders under the soul sand tile",
+      "min": {
+        "x": -323,
+        "y": 140,
+        "z": -71
+      },
+      "max": {
+        "x": -177,
+        "y": 165,
+        "z": 63
+      }
+    }
+  ],
+  "protectedRegions": [
+    {
+      "name": "muncher: rails, tripwires, observers, start rail, launch button, redstone blocks, booth",
+      "min": {
+        "x": -194,
+        "y": 195,
+        "z": -54
+      },
+      "max": {
+        "x": -63,
+        "y": 240,
+        "z": 55
+      }
+    },
+    {
+      "name": "suppression machinery: glass layers, wire, repeaters, skulls, pots, TNT dupers and levers, drop bin, CS sorter",
+      "min": {
+        "x": -74,
+        "y": 195,
+        "z": -74
+      },
+      "max": {
+        "x": 80,
+        "y": 245,
+        "z": 71
+      }
+    },
+    {
+      "name": "bubble elevator: shaft and its entrance trapdoors",
+      "min": {
+        "x": 66,
+        "y": 171,
+        "z": -74
+      },
+      "max": {
+        "x": 68,
+        "y": 216,
+        "z": -73
+      }
+    },
+    {
+      "name": "stasis chunk loaders under the moss tile (pearl trapdoors)",
+      "min": {
+        "x": -66,
+        "y": 155,
+        "z": -65
+      },
+      "max": {
+        "x": 80,
+        "y": 164,
+        "z": 65
+      }
+    },
+    {
+      "name": "stasis chunk loaders under the muncher (pearl trapdoors)",
+      "min": {
+        "x": -192,
+        "y": 155,
+        "z": -49
+      },
+      "max": {
+        "x": -96,
+        "y": 164,
+        "z": 63
+      }
+    },
+    {
+      "name": "soul sand machines parked east (copper bulb, comparator, observer at y178)",
+      "min": {
+        "x": -192,
+        "y": 173,
+        "z": -64
+      },
+      "max": {
+        "x": -185,
+        "y": 178,
+        "z": 63
+      }
+    },
+    {
+      "name": "soul sand turnaround station west (copper bulb, comparator, observer at y178)",
+      "min": {
+        "x": -328,
+        "y": 173,
+        "z": -64
+      },
+      "max": {
+        "x": -321,
+        "y": 178,
+        "z": 63
+      }
+    }
+  ],
+  "hasteZones": [
+    {
+      "name": "soul sand Haste II beacon west (level 4, 50 blocks)",
+      "min": {
+        "x": -371,
+        "y": 100,
+        "z": -52
+      },
+      "max": {
+        "x": -271,
+        "y": 319,
+        "z": 48
+      }
+    },
+    {
+      "name": "soul sand Haste II beacon north (level 4, 50 blocks)",
+      "min": {
+        "x": -309,
+        "y": 100,
+        "z": -116
+      },
+      "max": {
+        "x": -209,
+        "y": 319,
+        "z": -16
+      }
+    },
+    {
+      "name": "soul sand Haste II beacon south (level 4, 50 blocks)",
+      "min": {
+        "x": -305,
+        "y": 100,
+        "z": 14
+      },
+      "max": {
+        "x": -205,
+        "y": 319,
+        "z": 114
+      }
+    },
+    {
+      "name": "soul sand Haste II beacon east (level 4, 50 blocks)",
+      "min": {
+        "x": -242,
+        "y": 100,
+        "z": -53
+      },
+      "max": {
+        "x": -142,
+        "y": 319,
+        "z": 47
+      }
+    }
+  ],
+  "_soulsand": {
+    "platforms[soulsand] tile": "SURVEYED (world downloads 2026-10-10 and the owner's localhost_25567 save 2026-10-11 22:27): 16384 soul_sand at y172, art layer y173 empty, map-grid aligned, glow-lichen noobline on the row north of the tile, hoppers under the whole floor (y169-171) feeding the soul sorter; no item collection switch.",
+    "platforms[soulsand].center": "The button cross (-257,179,-1) (feet on the y178 glass). Walkable since 2026-10-11: the owner's east glass walkway (a stair at x -182 rising north to south from the walkway, a y179 path south, a step over the parked machines at y180-181), then a 2-block hop onto the bridge's east end and the bridge west to the cross. Presence rule: from here the farthest chunk of the sweep is 5 (2b2t simulation distance 5): 0 to spare, as on moss.",
+    "platforms[soulsand].clear": "MEASURED in the local test world (RCON presses): the east-wired button launches all 128 machines (parked east) west and they park at the west station; the west-wired button brings them back east; the art layer is fully cleared either way. Probes: the slime block of the first machine row, (-189,175,-63) parked east, (-326,175,-63) parked west.",
+    "platforms[soulsand].mapStandAt": "The floor under the cross: the map is made and checked there (the cross is about 210 blocks of walking away by the east walkway).",
+    "platforms[soulsand].hopDownTo": "After the clear the bot drops from the cross to the floor (feet 179 to 173, 6.1 blocks: 4 HP before armour), only with health >= hopDownMinHealth; otherwise it walks back by the east walkway.",
+    "platforms[soulsand].clearableBlocks": "The piston-clearable defaults without foliage (no flowers or roots on soul sand).",
+    "storage.materialRegions[soul]": "Soul sorter front rows y174-175 (west half labelled: 16 carpets, 11 plates, pot, dripstone, candle, resin clump; east half 'Fullblock', unlabelled). Rows y176-177 are left out (reach and sight from the walkway not checked).",
+    "hasteZones": "Soul beacons are level 4 pairs at y150 (Speed II + Haste II): Haste covers the tile except a hole of about 28 x 29 around the centre and the four corners.",
+    "noGoZones/protectedRegions[soul]": "The east machine pad and the west turnaround station (y173-178, whole tile length): their copper bulbs ((-192,178,-1), (-321,178,0)) are not protected by block type. The stasis loaders under the tile are no-go. the owner's walkway stays outside them (it crosses the east pad at y180-181).",
+    "storage.returnDrops[soul]": "Soul sand drop point (owner 2026-10-12: dispose of items in the water stream west of the soul sand platform): stand on the soul walkway's west end, throw into the 1-wide water column between the turnaround station's glass wall and the tile, which carries items north to the soul sorter's bubble column. Local test world (the owner's 2026-10-11 save): items reach the sorter's top hoppers within seconds."
+  }
+}

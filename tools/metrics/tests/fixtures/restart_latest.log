@@ -1,0 +1,8 @@
+[2026/01/03 09:43:00] [Proxy] [INFO] Starting ZenithProxy-3.7.2+java.1.21.4
+[2026/01/03 09:43:01] [Plugin.mapart] [INFO] Map art plugin 0.1.0 (ddd4444) loaded (built 2026-01-03 09:42 UTC; builder on, data in plugins/mapart)
+[2026/01/03 09:43:20] [Plugin.mapart] [INFO] bot ticks starting (IDLE)
+[2026/01/03 09:43:20] [Plugin.mapart] [INFO] resuming #j0009 sample [0,0] at NUKE
+[2026/01/03 09:43:22] [Plugin.mapart] [INFO] nuking 120 blocks on moss
+[2026/01/03 09:43:22] [MapArt-Bot] [INFO] Breaking 120 blocks: 1 tool(s) to their own hotbar slots (minecraft:netherite_pickaxe -> hotbar 7)
+[2026/01/03 09:44:00] [MapArt-Bot] [INFO] Break round (DOUBLE) done: 20/120 broken in 400 ticks (20.0/block; mining 5.5/block vs vanilla single 4.9/block); 5 pairs, 10 singles (2 instant); delayed 0/0 broken, 0 timed out
+[2026/01/03 09:45:00] [Chat] [INFO] <Someone> still nuking

@@ -1,0 +1,38 @@
+[2026/02/04 09:00:00] [Proxy] [INFO] Starting ZenithProxy-3.7.2+java.1.21.4
+[2026/02/04 09:00:01] [Plugin.mapart] [INFO] Map art plugin 0.1.0 (aaa1111) loaded (built 2026-02-04 08:59 UTC; builder on, data in plugins/mapart)
+[2026/02/04 09:00:05] [Client] [INFO] Connecting to localhost:25565...
+[2026/02/04 09:00:10] [Plugin.mapart] [INFO] bot ticks starting (IDLE)
+[2026/02/04 09:00:10] [Plugin.mapart] [INFO] engine ready (idle)
+[2026/02/04 09:00:20] [Plugin.mapart] [INFO] Map art job j0006 "sample" queued by Tester: 1x2 tiles
+[2026/02/04 09:00:20] [Plugin.mapart] [INFO] phase IDLE -> SELECT
+[2026/02/04 09:00:20] [Plugin.mapart] [INFO] selected #j0006 sample [0,0] on platform moss (500 blocks)
+[2026/02/04 09:00:20] [Plugin.mapart] [INFO] phase SELECT -> INSPECT (#j0006 sample [0,0])
+[2026/02/04 09:00:21] [Plugin.mapart] [INFO] platform moss is clear
+[2026/02/04 09:00:21] [Plugin.mapart] [INFO] phase INSPECT -> STOCK_CHECK (#j0006 sample [0,0])
+[2026/02/04 09:00:40] [Plugin.mapart] [INFO] phase STOCK_CHECK -> GEAR (#j0006 sample [0,0])
+[2026/02/04 09:00:40] [Plugin.mapart] [INFO] phase GEAR -> RESTOCK (#j0006 sample [0,0])
+[2026/02/04 09:00:40] [Plugin.mapart] [INFO] restock: 4 lanes left, load covers 2 + 0 cells of the next, withdraw {minecraft:red_carpet=200}
+[2026/02/04 09:01:00] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0006 sample [0,0])
+[2026/02/04 09:18:00] [Plugin.mapart] [INFO] phase BUILD -> VERIFY (#j0006 sample [0,0])
+[2026/02/04 09:19:00] [Plugin.mapart] [INFO] phase VERIFY -> FILL_MAP (#j0006 sample [0,0])
+[2026/02/04 09:19:10] [Plugin.mapart] [INFO] phase FILL_MAP -> CHECK_MAP (#j0006 sample [0,0])
+[2026/02/04 09:19:10] [Plugin.mapart] [INFO] phase CHECK_MAP -> LOCK (#j0006 sample [0,0])
+[2026/02/04 09:19:30] [Plugin.mapart] [INFO] phase LOCK -> RENAME (#j0006 sample [0,0])
+[2026/02/04 09:20:00] [Plugin.mapart] [INFO] phase RENAME -> STORE (#j0006 sample [0,0])
+[2026/02/04 09:20:02] [Plugin.mapart] [INFO] #j0006 sample [0,0] stored in [2,174,-9]
+[2026/02/04 09:20:02] [Plugin.mapart] [INFO] phase STORE -> COUNT (#j0006 sample [0,0])
+[2026/02/04 09:20:02] [Plugin.mapart] [INFO] [mapart] Map done: sample 0,0: #j0006 sample, tile 0,0 on moss, map #21
+[2026/02/04 09:20:05] [Plugin.mapart] [INFO] phase COUNT -> NUKE (#j0006 sample [0,0])
+[2026/02/04 09:20:05] [Plugin.mapart] [INFO] item collection on moss -> ON
+[2026/02/04 09:20:08] [Plugin.mapart] [INFO] nuking 200 blocks on moss
+[2026/02/04 09:20:08] [MapArt-Bot] [INFO] Breaking 200 blocks: 1 tool(s) to their own hotbar slots (minecraft:netherite_pickaxe -> hotbar 7)
+[2026/02/04 09:25:00] [MapArt-Bot] [INFO] Break round (SINGLE) done: 200/200 broken in 5800 ticks (29.0/block)
+[2026/02/04 09:25:00] [Plugin.mapart] [INFO] leaving the art layer of moss after the nuke: walking from 3,173,-6 to 5,179,-3
+[2026/02/04 09:25:30] [Plugin.mapart] [INFO] phase NUKE -> CLEAR (#j0006 sample [0,0])
+[2026/02/04 09:25:30] [Plugin.mapart] [INFO] clear on moss (attempt 1): going to press BUTTON 5,179,-2
+[2026/02/04 09:25:31] [Plugin.mapart] [INFO] pressing clear on moss (attempt 1): BUTTON 5,179,-2 clicked from 5,179,-3
+[2026/02/04 09:25:31] [Plugin.mapart] [INFO] phase CLEAR -> WAIT_CLEAR (#j0006 sample [0,0])
+[2026/02/04 09:26:00] [Client] [INFO] Disconnecting from server...
+[2026/02/04 09:26:00] [Client] [INFO] Disconnected: Manual Disconnect
+[2026/02/04 09:26:00] [Plugin.mapart] [INFO] bot ticks stopped (WAIT_CLEAR)
+[2026/02/04 09:26:01] [Proxy] [INFO] Shutting Down...

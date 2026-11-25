@@ -1,0 +1,49 @@
+/.idea/*
+!/.idea/runConfigurations
+*.iml
+/run/
+/log/
+/build/
+/.gradle/
+*.class
+*.ipr
+/out/
+.DS_Store
+# any json-like file in top directory, including configs, auth cache, etc.
+/*.json*
+*.tmp
+/.vscode
+/launcher
+/ViaLoader/
+dist/
+/*.spec
+__pycache__/
+*.exe
+*.zip
+/launcher-python*
+maps/
+replays/
+plugins/
+
+dataGenerator/run
+/dataGenerator/.gradle
+
+/dataGenerator/build
+/dataGenerator/.idea
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+# --- zenith-mapslopbot ---
+!src/test/resources/**/*.zip
+# local test server (Paper + Grim) and its downloaded jars/world copies
+/testserver/work/
+/testserver/cache/
+# never commit secrets (Discord tokens, auth caches)
+*.token
+secrets/
+.claude/worktrees/
+/testserver/local/

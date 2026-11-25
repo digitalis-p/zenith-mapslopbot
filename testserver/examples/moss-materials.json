@@ -1,0 +1,1023 @@
+{
+ "_about": "Moss sorter material chests for the local test world: item -> front double chest (x,y,z + pair) and the y levels of that sorter column. From the site survey labels, plus 8 terracotta columns assigned in the TEST WORLD ONLY (x -28..-21, unlabelled on 2b2t). Used by stock-chests.py.",
+ "chests": {
+  "materials": {
+   "minecraft:birch_leaves": [
+    {
+     "x": -30,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -30,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "birch_leaves",
+     "platform": "MOSS",
+     "source": "survey label",
+     "note": "label is a floor block in front of the column; item meaning unconfirmed"
+    }
+   ],
+   "minecraft:birch_pressure_plate": [
+    {
+     "x": -48,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -48,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "birch_pressure_plate",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:black_carpet": [
+    {
+     "x": -61,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -61,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "black_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:blue_carpet": [
+    {
+     "x": -52,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -52,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "blue_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:brown_carpet": [
+    {
+     "x": -60,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -60,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "brown_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:cherry_pressure_plate": [
+    {
+     "x": -40,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -40,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "cherry_pressure_plate",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:crimson_pressure_plate": [
+    {
+     "x": -39,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -39,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "crimson_pressure_plate",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:crimson_roots": [
+    {
+     "x": -33,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -33,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "crimson_roots",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:cyan_carpet": [
+    {
+     "x": -54,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -54,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "cyan_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:dripstone_block": [
+    {
+     "x": -36,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -36,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "dripstone_block",
+     "platform": "MOSS",
+     "source": "survey label",
+     "note": "label is a floor block in front of the column; item meaning unconfirmed"
+    }
+   ],
+   "minecraft:glow_lichen": [
+    {
+     "x": -29,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -29,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "glow_lichen",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:gray_carpet": [
+    {
+     "x": -62,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -62,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "gray_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:green_carpet": [
+    {
+     "x": -55,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -55,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "green_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:heavy_weighted_pressure_plate": [
+    {
+     "x": -47,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -47,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "heavy_weighted_pressure_plate",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:jungle_pressure_plate": [
+    {
+     "x": -46,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -46,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "jungle_pressure_plate",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:light_blue_carpet": [
+    {
+     "x": -53,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -53,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "light_blue_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:light_gray_carpet": [
+    {
+     "x": -63,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -63,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "light_gray_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:light_weighted_pressure_plate": [
+    {
+     "x": -42,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -42,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "light_weighted_pressure_plate",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:lime_carpet": [
+    {
+     "x": -56,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -56,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "lime_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:magenta_carpet": [
+    {
+     "x": -50,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -50,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "magenta_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:mushroom_stem": [
+    {
+     "x": -35,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -35,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "mushroom_stem",
+     "platform": "MOSS",
+     "source": "survey label",
+     "note": "label is a floor block in front of the column; item meaning unconfirmed"
+    }
+   ],
+   "minecraft:oak_pressure_plate": [
+    {
+     "x": -44,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -44,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "oak_pressure_plate",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:open_eyeblossom": [
+    {
+     "x": -32,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -32,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "open_eyeblossom",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:orange_carpet": [
+    {
+     "x": -58,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -58,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "orange_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:pale_oak_pressure_plate": [
+    {
+     "x": -43,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -43,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "pale_oak_pressure_plate",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:pink_carpet": [
+    {
+     "x": -49,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -49,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "pink_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:pink_petals": [
+    {
+     "x": -31,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -31,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "pink_petals",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:purple_carpet": [
+    {
+     "x": -51,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -51,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "purple_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:red_carpet": [
+    {
+     "x": -59,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -59,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "red_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:resin_clump": [
+    {
+     "x": -37,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -37,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "resin_clump",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:spruce_pressure_plate": [
+    {
+     "x": -41,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -41,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "spruce_pressure_plate",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:stone_pressure_plate": [
+    {
+     "x": -45,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -45,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "stone_pressure_plate",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:terracotta": [
+    {
+     "x": -34,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -34,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "terracotta",
+     "platform": "MOSS",
+     "source": "survey label",
+     "note": "label is a floor block in front of the column; item meaning unconfirmed"
+    }
+   ],
+   "minecraft:warped_pressure_plate": [
+    {
+     "x": -38,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -38,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "warped_pressure_plate",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:white_carpet": [
+    {
+     "x": -64,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -64,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "white_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:yellow_carpet": [
+    {
+     "x": -57,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -57,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "yellow_carpet",
+     "platform": "MOSS",
+     "source": "survey label"
+    }
+   ],
+   "minecraft:white_terracotta": [
+    {
+     "x": -28,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -28,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "white_terracotta",
+     "platform": "MOSS",
+     "source": "test-world addition: unlabelled moss sorter column, labelled by config/world-edits.moss.txt"
+    }
+   ],
+   "minecraft:light_gray_terracotta": [
+    {
+     "x": -27,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -27,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "light_gray_terracotta",
+     "platform": "MOSS",
+     "source": "test-world addition: unlabelled moss sorter column, labelled by config/world-edits.moss.txt"
+    }
+   ],
+   "minecraft:gray_terracotta": [
+    {
+     "x": -26,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -26,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "gray_terracotta",
+     "platform": "MOSS",
+     "source": "test-world addition: unlabelled moss sorter column, labelled by config/world-edits.moss.txt"
+    }
+   ],
+   "minecraft:black_terracotta": [
+    {
+     "x": -25,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -25,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "black_terracotta",
+     "platform": "MOSS",
+     "source": "test-world addition: unlabelled moss sorter column, labelled by config/world-edits.moss.txt"
+    }
+   ],
+   "minecraft:brown_terracotta": [
+    {
+     "x": -24,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -24,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "brown_terracotta",
+     "platform": "MOSS",
+     "source": "test-world addition: unlabelled moss sorter column, labelled by config/world-edits.moss.txt"
+    }
+   ],
+   "minecraft:red_terracotta": [
+    {
+     "x": -23,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -23,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "red_terracotta",
+     "platform": "MOSS",
+     "source": "test-world addition: unlabelled moss sorter column, labelled by config/world-edits.moss.txt"
+    }
+   ],
+   "minecraft:orange_terracotta": [
+    {
+     "x": -22,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -22,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "orange_terracotta",
+     "platform": "MOSS",
+     "source": "test-world addition: unlabelled moss sorter column, labelled by config/world-edits.moss.txt"
+    }
+   ],
+   "minecraft:yellow_terracotta": [
+    {
+     "x": -21,
+     "y": 174,
+     "z": -71,
+     "pair": {
+      "x": -21,
+      "y": 174,
+      "z": -72
+     },
+     "stackYs": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+     ],
+     "label": "yellow_terracotta",
+     "platform": "MOSS",
+     "source": "test-world addition: unlabelled moss sorter column, labelled by config/world-edits.moss.txt"
+    }
+   ]
+  }
+ }
+}

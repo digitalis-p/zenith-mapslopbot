@@ -1,0 +1,85 @@
+{
+  "authentication": {
+    "accountType": "offline",
+    "username": "@USERNAME@",
+    "offlineUUID": "@OFFLINE_UUID@"
+  },
+  "client": {
+    "server": {
+      "address": "127.0.0.1",
+      "port": 25566
+    },
+    "autoConnect": true,
+    "viaversion": {
+      "enabled": false,
+      "disableOn2b2t": true,
+      "autoProtocolVersion": true,
+      "protocolVersion": 769
+    },
+    "extra": {
+      "antiafk": {
+        "enabled": false
+      },
+      "autoReconnect": {
+        "enabled": true,
+        "delaySeconds": 5,
+        "maxAttempts": 200
+      },
+      "autoRespawn": {
+        "enabled": true,
+        "delayMillis": 100
+      },
+      "spammer": {
+        "enabled": false
+      },
+      "pathfinder": {
+        "allowBreak": false,
+        "allowPlace": false,
+        "allowInventory": false
+      },
+      "autoReply": {
+        "enabled": false
+      }
+    }
+  },
+  "server": {
+    "enabled": true,
+    "bind": {
+      "address": "127.0.0.1",
+      "port": 25565
+    },
+    "proxyIP": "localhost",
+    "connectionTestOnStart": false,
+    "queueStatusRefreshWhileNotOn2b2t": false,
+    "dynamicQueueEtaEquation": false,
+    "upnp": false,
+    "ping": {
+      "enabled": true,
+      "lanBroadcast": false
+    },
+    "viaversion": {
+      "enabled": true,
+      "autoRemoveFromPipeline": true
+    }
+  },
+  "discord": {
+    "enable": false,
+    "token": "",
+    "chatRelay": {
+      "enable": false
+    }
+  },
+  "database": {
+    "enabled": false
+  },
+  "interactiveTerminal": {
+    "enable": true,
+    "logToDiscord": false
+  },
+  "inGameCommands": {
+    "logToDiscord": false
+  },
+  "plugins": {
+    "enabled": true
+  }
+}

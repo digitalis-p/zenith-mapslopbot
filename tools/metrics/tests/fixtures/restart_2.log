@@ -1,0 +1,35 @@
+[2026/01/03 09:14:00] [Proxy] [INFO] Starting ZenithProxy-3.7.2+java.1.21.4
+[2026/01/03 09:14:01] [Plugin.mapart] [INFO] Map art plugin 0.1.0 (bbb2222) loaded (built 2026-01-03 09:13 UTC; builder on, data in plugins/mapart)
+[2026/01/03 09:14:30] [Plugin.mapart] [INFO] bot ticks starting (IDLE)
+[2026/01/03 09:14:30] [Plugin.mapart] [INFO] resuming #j0009 sample [0,0] at BUILD
+[2026/01/03 09:15:00] [Plugin.mapart] [INFO] Map art Discord command by Tester: resume
+[2026/01/03 09:15:00] [Plugin.mapart] [INFO] resumed in BUILD
+[2026/01/03 09:15:00] [Plugin.mapart] [INFO] [mapart] Resumed: #j0009 sample [0,0] (BUILD)
+[2026/01/03 09:15:00] [Plugin.mapart] [INFO] phase BUILD -> RESTOCK (#j0009 sample [0,0])
+[2026/01/03 09:15:00] [Plugin.mapart] [INFO] restock: 7 lanes left, load covers 1 + 5 cells of the next, withdraw {minecraft:white_carpet=255}
+[2026/01/03 09:16:00] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0009 sample [0,0])
+[2026/01/03 09:18:00] [MapArt-Bot] [INFO] Lane 1: 255 placed, 0 skipped of 255 in 2400 ticks; clicks 255: 255 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=255, late=0, rejected=0, unknown=0, rtt=3t]
+[2026/01/03 09:18:00] [Plugin.mapart] [INFO] paused: paused from Terminal
+[2026/01/03 09:18:01] [Client] [INFO] Disconnected: Manual Disconnect
+[2026/01/03 09:18:01] [Plugin.mapart] [INFO] bot ticks stopped (BUILD)
+[2026/01/03 09:20:00] [Proxy] [INFO] Starting ZenithProxy-3.7.2+java.1.21.4
+[2026/01/03 09:20:01] [Plugin.mapart] [INFO] Map art plugin 0.1.0 (ccc3333) loaded (built 2026-01-03 09:19 UTC; builder on, data in plugins/mapart)
+[2026/01/03 09:20:20] [Plugin.mapart] [INFO] bot ticks starting (IDLE)
+[2026/01/03 09:20:20] [Plugin.mapart] [INFO] resuming #j0009 sample [0,0] at BUILD
+[2026/01/03 09:20:25] [Plugin.mapart] [INFO] phase BUILD -> RESTOCK (#j0009 sample [0,0])
+[2026/01/03 09:20:25] [Plugin.mapart] [INFO] restock: 6 lanes left, load covers 6, withdraw {minecraft:white_carpet=1490}
+[2026/01/03 09:21:25] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0009 sample [0,0])
+[2026/01/03 09:40:00] [MapArt-Bot] [INFO] Lane 7: 1490 placed, 5 skipped of 1495 in 9000 ticks; clicks 1490: 1490 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=1745, late=0, rejected=0, unknown=0, rtt=3t]
+[2026/01/03 09:40:00] [Plugin.mapart] [INFO] phase BUILD -> VERIFY (#j0009 sample [0,0])
+[2026/01/03 09:40:00] [Plugin.mapart] [INFO] #j0009 sample [0,0] verified: 2000 blocks
+[2026/01/03 09:40:00] [Plugin.mapart] [INFO] phase VERIFY -> FILL_MAP (#j0009 sample [0,0])
+[2026/01/03 09:40:10] [Plugin.mapart] [INFO] phase FILL_MAP -> CHECK_MAP (#j0009 sample [0,0])
+[2026/01/03 09:40:10] [Plugin.mapart] [INFO] phase CHECK_MAP -> LOCK (#j0009 sample [0,0])
+[2026/01/03 09:40:30] [Plugin.mapart] [INFO] phase LOCK -> RENAME (#j0009 sample [0,0])
+[2026/01/03 09:40:40] [Plugin.mapart] [INFO] phase RENAME -> STORE (#j0009 sample [0,0])
+[2026/01/03 09:40:45] [Plugin.mapart] [INFO] #j0009 sample [0,0] stored in [4,71,5]
+[2026/01/03 09:40:45] [Plugin.mapart] [INFO] phase STORE -> NUKE (#j0009 sample [0,0])
+[2026/01/03 09:40:50] [Plugin.mapart] [INFO] nuking 300 blocks on moss
+[2026/01/03 09:41:50] [Client] [INFO] Disconnecting from server...
+[2026/01/03 09:41:50] [Plugin.mapart] [INFO] bot ticks stopped (NUKE)
+[2026/01/03 09:41:50] [Client] [INFO] Disconnected: Manual Disconnect

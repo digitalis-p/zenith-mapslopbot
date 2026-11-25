@@ -1,0 +1,148 @@
+[2026/02/03 10:00:00] [Proxy] [INFO] Starting ZenithProxy-3.7.2+java.1.21.4
+[2026/02/03 10:00:01] [Plugin.mapart] [INFO] Map art plugin 0.1.0 (abc1234) loaded (built 2026-02-03 09:59 UTC; builder on, data in plugins/mapart)
+[2026/02/03 10:00:05] [Client] [INFO] Connecting to localhost:25565...
+[2026/02/03 10:00:10] [Plugin.mapart] [INFO] bot ticks starting (IDLE)
+[2026/02/03 10:00:10] [Plugin.mapart] [INFO] engine ready (idle)
+[2026/02/03 10:01:00] [Plugin.mapart] [INFO] Map art job j0005 "demo" queued by Tester: 3x1 tiles
+[2026/02/03 10:01:00] [Plugin.mapart] [INFO] phase IDLE -> SELECT
+[2026/02/03 10:01:00] [Plugin.mapart] [INFO] selected #j0005 demo [0,0] on platform moss (900 blocks)
+[2026/02/03 10:01:00] [Plugin.mapart] [INFO] [mapart] Started demo: #j0005 demo [0,0] on platform moss: 900 blocks (map 1 of 3)
+[2026/02/03 10:01:00] [Plugin.mapart] [INFO] phase SELECT -> INSPECT (#j0005 demo [0,0])
+[2026/02/03 10:01:02] [Plugin.mapart] [INFO] platform moss is clear
+[2026/02/03 10:01:02] [Plugin.mapart] [INFO] phase INSPECT -> STOCK_CHECK (#j0005 demo [0,0])
+[2026/02/03 10:01:30] [Plugin.mapart] [INFO] phase STOCK_CHECK -> GEAR (#j0005 demo [0,0])
+[2026/02/03 10:01:30] [Plugin.mapart] [INFO] phase GEAR -> RESTOCK (#j0005 demo [0,0])
+[2026/02/03 10:01:30] [Plugin.mapart] [INFO] restock: 6 lanes left, load covers 2 + 30 cells of the next, withdraw {minecraft:white_carpet=320}
+[2026/02/03 10:02:00] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0005 demo [0,0])
+[2026/02/03 10:18:00] [Plugin.mapart] [INFO] phase BUILD -> VERIFY (#j0005 demo [0,0])
+[2026/02/03 10:19:00] [Plugin.mapart] [INFO] phase VERIFY -> FILL_MAP (#j0005 demo [0,0])
+[2026/02/03 10:19:10] [Plugin.mapart] [INFO] phase FILL_MAP -> CHECK_MAP (#j0005 demo [0,0])
+[2026/02/03 10:19:10] [Plugin.mapart] [INFO] phase CHECK_MAP -> LOCK (#j0005 demo [0,0])
+[2026/02/03 10:19:30] [Plugin.mapart] [INFO] phase LOCK -> RENAME (#j0005 demo [0,0])
+[2026/02/03 10:20:00] [Plugin.mapart] [INFO] phase RENAME -> STORE (#j0005 demo [0,0])
+[2026/02/03 10:20:30] [Plugin.mapart] [INFO] #j0005 demo [0,0] stored in [3,174,-8]
+[2026/02/03 10:20:30] [Plugin.mapart] [INFO] phase STORE -> COUNT (#j0005 demo [0,0])
+[2026/02/03 10:20:30] [Plugin.mapart] [INFO] [mapart] Map done: demo 0,0: #j0005 demo, tile 0,0 on moss, map #12
+[2026/02/03 10:20:30] [Plugin.mapart] [INFO] map counter pressed for #j0005 demo [0,0]: button 3,175,-8 clicked from 3,174,-7
+[2026/02/03 10:20:33] [Plugin.mapart] [INFO] phase COUNT -> NUKE (#j0005 demo [0,0])
+[2026/02/03 10:20:33] [Plugin.mapart] [INFO] item collection on moss -> ON
+[2026/02/03 10:20:37] [Plugin.mapart] [INFO] nuking 400 blocks on moss
+[2026/02/03 10:20:37] [MapArt-Bot] [INFO] Breaking 400 blocks: 1 tool(s) to their own hotbar slots (minecraft:netherite_pickaxe -> hotbar 7)
+[2026/02/03 10:30:00] [MapArt-Bot] [INFO] Break round (SINGLE) done: 390/400 broken in 11000 ticks (28.2/block)
+[2026/02/03 10:30:00] [Plugin.mapart] [INFO] no room for XP bottles to mend netherite_pickaxe at 300/2031: getting rid of leftover materials first
+[2026/02/03 10:30:00] [Plugin.mapart] [INFO] dropping {minecraft:white_carpet=20} into [5,170,-6] (standing at [5,174,-6])
+[2026/02/03 10:30:10] [MapArt-Bot] [INFO] Dropped {minecraft:white_carpet=20} into [5,170,-6]
+[2026/02/03 10:30:10] [Plugin.mapart] [INFO] dropped {minecraft:white_carpet=20}
+[2026/02/03 10:30:10] [Plugin.mapart] [INFO] fetching 40 XP bottles to mend netherite_pickaxe at 300/2031
+[2026/02/03 10:30:25] [Plugin.mapart] [INFO] mending netherite_pickaxe at 300/2031 with 32 XP bottles (about 40 to reach 95 %)
+[2026/02/03 10:30:38] [Plugin.mapart] [INFO] mended minecraft:netherite_pickaxe: 300 -> 680 uses
+[2026/02/03 10:30:38] [Plugin.mapart] [INFO] mending netherite_pickaxe at 680/2031 with 8 XP bottles (about 8 to reach 95 %)
+[2026/02/03 10:30:42] [Plugin.mapart] [INFO] mended minecraft:netherite_pickaxe: 680 -> 776 uses
+[2026/02/03 10:30:42] [Plugin.mapart] [INFO] nuking 10 blocks on moss
+[2026/02/03 10:31:00] [MapArt-Bot] [INFO] Break round (SINGLE) done: 10/10 broken in 360 ticks (36.0/block)
+[2026/02/03 10:31:00] [Plugin.mapart] [INFO] leaving the art layer of moss after the nuke: walking from 4,173,-5 to 6,179,-2
+[2026/02/03 10:31:20] [Plugin.mapart] [WARN] [NUKE] 1 blocks did not break (attempt 1/6)
+[2026/02/03 10:31:21] [Plugin.mapart] [INFO] nuking 1 blocks on moss
+[2026/02/03 10:31:30] [MapArt-Bot] [INFO] Break round (SINGLE) done: 1/1 broken in 180 ticks (180.0/block)
+[2026/02/03 10:31:30] [Plugin.mapart] [INFO] leaving the art layer of moss after the nuke: walking from 4,173,-5 to 6,179,-2
+[2026/02/03 10:31:55] [Plugin.mapart] [INFO] phase NUKE -> CLEAR (#j0005 demo [0,0])
+[2026/02/03 10:31:55] [Plugin.mapart] [INFO] clear on moss (attempt 1): going to press BUTTON 6,179,-1
+[2026/02/03 10:31:55] [Plugin.mapart] [INFO] [mapart] Clearing: #j0005 demo [0,0]: piston clear on moss.
+[2026/02/03 10:31:57] [Plugin.mapart] [INFO] pressing clear on moss (attempt 1): BUTTON 6,179,-1 clicked from 6,179,-2
+[2026/02/03 10:31:57] [Plugin.mapart] [INFO] phase CLEAR -> WAIT_CLEAR (#j0005 demo [0,0])
+[2026/02/03 10:31:57] [Plugin.mapart] [INFO] clear on moss: the farthest chunk of the sweep is 3 chunks from where the bot waits; server simulation distance 4 chunks (view 8), 1 to spare
+[2026/02/03 10:32:57] [Plugin.mapart] [INFO] keep-alive: idle 60 s in WAIT_CLEAR (40 blocks left); swinging every 60 s
+[2026/02/03 10:33:08] [Plugin.mapart] [INFO] platform moss clear 71.2 s after the clear was pressed (art layer read all air)
+[2026/02/03 10:33:08] [Plugin.mapart] [INFO] item collection on moss keeps running until no dropped items are left on the platform for 3 s, at most 30 s (25 now)
+[2026/02/03 10:33:30] [Plugin.mapart] [INFO] collection: 0 items left after 19.0 s; carts off after 22.0 s
+[2026/02/03 10:33:30] [Plugin.mapart] [INFO] phase WAIT_CLEAR -> FINISH_TILE (#j0005 demo [0,0])
+[2026/02/03 10:33:30] [Plugin.mapart] [INFO] item collection on moss -> OFF
+[2026/02/03 10:33:52] [Plugin.mapart] [INFO] [mapart] Tile done: #j0005 demo [0,0]; next map of demo.
+[2026/02/03 10:33:52] [Plugin.mapart] [INFO] phase FINISH_TILE -> SELECT
+[2026/02/03 10:33:52] [Plugin.mapart] [INFO] selected #j0005 demo [1,0] on platform moss (800 blocks)
+[2026/02/03 10:33:52] [Plugin.mapart] [INFO] [mapart] Started demo: #j0005 demo [1,0] on platform moss: 800 blocks (map 2 of 3)
+[2026/02/03 10:33:52] [Plugin.mapart] [INFO] phase SELECT -> INSPECT (#j0005 demo [1,0])
+[2026/02/03 10:33:54] [Plugin.mapart] [INFO] platform moss is clear
+[2026/02/03 10:33:54] [Plugin.mapart] [INFO] phase INSPECT -> STOCK_CHECK (#j0005 demo [1,0])
+[2026/02/03 10:33:54] [Plugin.mapart] [INFO] found 40 material containers in 1 regions (0 positions not loaded)
+[2026/02/03 10:33:54] [Plugin.mapart] [INFO] short of [minecraft:white_carpet]; rescanning 12 empty or matching material containers near known stock
+[2026/02/03 10:33:54] [Plugin.mapart] [INFO] scanning 12 material containers (12 targeted)
+[2026/02/03 10:33:55] [Plugin.mapart] [INFO] scan sweep: 12 containers from 3 stand spots
+[2026/02/03 10:34:30] [Plugin.mapart] [INFO] phase STOCK_CHECK -> GEAR (#j0005 demo [1,0])
+[2026/02/03 10:34:35] [Plugin.mapart] [INFO] phase GEAR -> RESTOCK (#j0005 demo [1,0])
+[2026/02/03 10:34:35] [Plugin.mapart] [INFO] dropping {minecraft:dirt=3} into [5,170,-6] (standing at [5,174,-6])
+[2026/02/03 10:34:45] [Plugin.mapart] [WARN] drop at [5,174,-6] failed: dropItems at [5,174,-6] into [5,170,-6]: no throw from [5,174,-6] lands in [5,170,-6]
+[2026/02/03 10:34:45] [Plugin.mapart] [WARN] could not get rid of {minecraft:dirt=3} (no return chest or drop point configured, or all failed)
+[2026/02/03 10:34:45] [Plugin.mapart] [INFO] restock: 6 lanes left, load covers 2 + 40 cells of the next, withdraw {minecraft:white_carpet=320}
+[2026/02/03 10:34:45] [Plugin.mapart] [INFO] restock sweep: 5 containers from 2 stand spots
+[2026/02/03 10:35:40] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0005 demo [1,0])
+[2026/02/03 10:50:00] [Plugin.mapart] [INFO] phase BUILD -> VERIFY (#j0005 demo [1,0])
+[2026/02/03 10:51:00] [Plugin.mapart] [INFO] phase VERIFY -> FILL_MAP (#j0005 demo [1,0])
+[2026/02/03 10:51:10] [Plugin.mapart] [INFO] phase FILL_MAP -> CHECK_MAP (#j0005 demo [1,0])
+[2026/02/03 10:51:10] [Plugin.mapart] [INFO] phase CHECK_MAP -> LOCK (#j0005 demo [1,0])
+[2026/02/03 10:51:30] [Plugin.mapart] [INFO] phase LOCK -> RENAME (#j0005 demo [1,0])
+[2026/02/03 10:52:00] [Plugin.mapart] [INFO] phase RENAME -> STORE (#j0005 demo [1,0])
+[2026/02/03 10:52:05] [Plugin.mapart] [INFO] #j0005 demo [1,0] stored in [3,174,-8]
+[2026/02/03 10:52:05] [Plugin.mapart] [INFO] phase STORE -> COUNT (#j0005 demo [1,0])
+[2026/02/03 10:52:05] [Plugin.mapart] [INFO] [mapart] Map done: demo 1,0: #j0005 demo, tile 1,0 on moss, map #13
+[2026/02/03 10:52:08] [Plugin.mapart] [INFO] phase COUNT -> NUKE (#j0005 demo [1,0])
+[2026/02/03 10:52:08] [Plugin.mapart] [INFO] item collection on moss -> ON
+[2026/02/03 10:52:09] [Plugin.mapart] [INFO] phase NUKE -> CLEAR (#j0005 demo [1,0])
+[2026/02/03 10:52:09] [Plugin.mapart] [INFO] clear on moss (attempt 1): going to press BUTTON 6,179,-1
+[2026/02/03 10:52:10] [Plugin.mapart] [INFO] pressing clear on moss (attempt 1): BUTTON 6,179,-1 clicked from 6,179,-2
+[2026/02/03 10:52:10] [Plugin.mapart] [INFO] phase CLEAR -> WAIT_CLEAR (#j0005 demo [1,0])
+[2026/02/03 10:52:10] [Plugin.mapart] [INFO] clear on moss: the farthest chunk of the sweep is 3 chunks from where the bot waits; server simulation distance 4 chunks (view 8), 1 to spare
+[2026/02/03 10:53:20] [Plugin.mapart] [INFO] platform moss clear 70.4 s after the clear was pressed (art layer read all air)
+[2026/02/03 10:53:20] [Plugin.mapart] [INFO] item collection on moss keeps running until no dropped items are left on the platform for 3 s, at most 30 s (0 now)
+[2026/02/03 10:53:24] [Plugin.mapart] [INFO] collection: 0 items left after 0.0 s; carts off after 4.0 s
+[2026/02/03 10:53:24] [Plugin.mapart] [INFO] phase WAIT_CLEAR -> FINISH_TILE (#j0005 demo [1,0])
+[2026/02/03 10:53:24] [Plugin.mapart] [INFO] item collection on moss -> OFF
+[2026/02/03 10:53:46] [Plugin.mapart] [INFO] [mapart] Tile done: #j0005 demo [1,0]; next map of demo.
+[2026/02/03 10:53:46] [Plugin.mapart] [INFO] phase FINISH_TILE -> SELECT
+[2026/02/03 10:53:46] [Plugin.mapart] [INFO] selected #j0005 demo [2,0] on platform moss (700 blocks)
+[2026/02/03 10:53:46] [Plugin.mapart] [INFO] [mapart] Started demo: #j0005 demo [2,0] on platform moss: 700 blocks (map 3 of 3)
+[2026/02/03 10:53:46] [Plugin.mapart] [INFO] phase SELECT -> INSPECT (#j0005 demo [2,0])
+[2026/02/03 10:53:46] [Plugin.mapart] [INFO] platform moss is clear
+[2026/02/03 10:53:46] [Plugin.mapart] [INFO] phase INSPECT -> STOCK_CHECK (#j0005 demo [2,0])
+[2026/02/03 10:53:47] [Plugin.mapart] [INFO] phase STOCK_CHECK -> GEAR (#j0005 demo [2,0])
+[2026/02/03 10:53:47] [Plugin.mapart] [INFO] phase GEAR -> RESTOCK (#j0005 demo [2,0])
+[2026/02/03 10:53:47] [Plugin.mapart] [INFO] restock: 5 lanes left, load covers 2 + 10 cells of the next, withdraw {minecraft:black_carpet=256}
+[2026/02/03 10:53:47] [Plugin.mapart] [INFO] restock sweep: 3 containers from 1 stand spots
+[2026/02/03 10:54:30] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0005 demo [2,0])
+[2026/02/03 11:08:00] [Plugin.mapart] [INFO] phase BUILD -> VERIFY (#j0005 demo [2,0])
+[2026/02/03 11:09:00] [Plugin.mapart] [INFO] phase VERIFY -> FILL_MAP (#j0005 demo [2,0])
+[2026/02/03 11:09:10] [Plugin.mapart] [INFO] phase FILL_MAP -> CHECK_MAP (#j0005 demo [2,0])
+[2026/02/03 11:09:10] [Plugin.mapart] [INFO] phase CHECK_MAP -> LOCK (#j0005 demo [2,0])
+[2026/02/03 11:09:30] [Plugin.mapart] [INFO] phase LOCK -> RENAME (#j0005 demo [2,0])
+[2026/02/03 11:10:00] [Plugin.mapart] [INFO] phase RENAME -> STORE (#j0005 demo [2,0])
+[2026/02/03 11:10:04] [Plugin.mapart] [INFO] #j0005 demo [2,0] stored in [3,174,-8]
+[2026/02/03 11:10:04] [Plugin.mapart] [INFO] phase STORE -> COUNT (#j0005 demo [2,0])
+[2026/02/03 11:10:04] [Plugin.mapart] [INFO] [mapart] Map done: demo 2,0: #j0005 demo, tile 2,0 on moss, map #14
+[2026/02/03 11:10:07] [Plugin.mapart] [INFO] phase COUNT -> NUKE (#j0005 demo [2,0])
+[2026/02/03 11:10:07] [Plugin.mapart] [INFO] item collection on moss -> ON
+[2026/02/03 11:10:10] [Plugin.mapart] [INFO] nuking 300 blocks on moss
+[2026/02/03 11:10:10] [MapArt-Bot] [INFO] Breaking 300 blocks: 1 tool(s) to their own hotbar slots (minecraft:netherite_pickaxe -> hotbar 7)
+[2026/02/03 11:12:00] [Plugin.mapart] [INFO] netherite_pickaxe at 700/2031: its mend waits for the clear: 180 blocks left in this round cost at most 250 uses (1.30 per block measured), 102 kept above the floor
+[2026/02/03 11:16:00] [MapArt-Bot] [INFO] Break round (FAST) done: 300/300 broken in 7000 ticks (23.33/block, 0.9 blocks/s at 20 ticks/s); 10 instant (up to 2 per tick, cap 2), 290 mined (6900 ticks)
+[2026/02/03 11:16:00] [Plugin.mapart] [INFO] leaving the art layer of moss after the nuke: walking from 4,173,-5 to 6,179,-2
+[2026/02/03 11:16:30] [Plugin.mapart] [INFO] phase NUKE -> CLEAR (#j0005 demo [2,0])
+[2026/02/03 11:16:30] [Plugin.mapart] [INFO] clear on moss (attempt 1): going to press BUTTON 6,179,-1
+[2026/02/03 11:16:32] [Plugin.mapart] [INFO] pressing clear on moss (attempt 1): BUTTON 6,179,-1 clicked from 6,179,-2
+[2026/02/03 11:16:32] [Plugin.mapart] [INFO] phase CLEAR -> WAIT_CLEAR (#j0005 demo [2,0])
+[2026/02/03 11:16:32] [Plugin.mapart] [INFO] clear on moss: the farthest chunk of the sweep is 3 chunks from where the bot waits; server simulation distance 4 chunks (view 8), 1 to spare
+[2026/02/03 11:16:33] [Plugin.mapart] [INFO] mending netherite_pickaxe at 700/2031 during the clear with 16 XP bottles (about 40 to reach 95 %)
+[2026/02/03 11:16:40] [Plugin.mapart] [INFO] mended minecraft:netherite_pickaxe: 700 -> 890 uses
+[2026/02/03 11:16:41] [Plugin.mapart] [INFO] mending netherite_pickaxe at 890/2031 during the clear with 16 XP bottles (about 24 to reach 95 %)
+[2026/02/03 11:16:48] [Plugin.mapart] [INFO] mended minecraft:netherite_pickaxe: 890 -> 1080 uses
+[2026/02/03 11:17:43] [Plugin.mapart] [INFO] platform moss clear 71.0 s after the clear was pressed (art layer read all air)
+[2026/02/03 11:17:43] [Plugin.mapart] [INFO] item collection on moss keeps running until no dropped items are left on the platform for 3 s, at most 30 s (20 now)
+[2026/02/03 11:17:44] [Plugin.mapart] [INFO] mending netherite_pickaxe at 1080/2031 during the clear with 8 XP bottles (about 8 to reach 95 %)
+[2026/02/03 11:17:48] [Plugin.mapart] [INFO] mended minecraft:netherite_pickaxe: 1080 -> 1176 uses
+[2026/02/03 11:18:13] [Plugin.mapart] [INFO] collection: cap reached with 2 items left; carts off
+[2026/02/03 11:18:13] [Plugin.mapart] [INFO] phase WAIT_CLEAR -> FINISH_TILE (#j0005 demo [2,0])
+[2026/02/03 11:18:13] [Plugin.mapart] [INFO] item collection on moss -> OFF
+[2026/02/03 11:18:35] [Plugin.mapart] [INFO] job j0005 DONE
+[2026/02/03 11:18:35] [Plugin.mapart] [INFO] [mapart] Job done: demo: #j0005 demo: 3 maps (3x1), 2400 blocks, 1 h 17 min
+[2026/02/03 11:18:35] [Plugin.mapart] [INFO] phase FINISH_TILE -> SELECT
+[2026/02/03 11:18:35] [Plugin.mapart] [INFO] phase SELECT -> IDLE
+[2026/02/03 11:25:00] [Plugin.mapart] [INFO] keep-alive: idle 60 s in IDLE; swinging every 60 s

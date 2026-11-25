@@ -1,0 +1,27 @@
+[2026/01/03 09:00:00] [Proxy] [INFO] Starting ZenithProxy-3.7.2+java.1.21.4
+[2026/01/03 09:00:01] [Plugin.mapart] [INFO] Map art plugin 0.1.0 (aaa1111) loaded (built 2026-01-03 08:59 UTC; builder on, data in plugins/mapart)
+[2026/01/03 09:00:10] [Plugin.mapart] [INFO] bot ticks starting (IDLE)
+[2026/01/03 09:00:10] [Plugin.mapart] [INFO] engine ready (idle)
+[2026/01/03 09:00:20] [Plugin.mapart] [INFO] phase IDLE -> SELECT
+[2026/01/03 09:00:20] [Plugin.mapart] [INFO] selected #j0009 sample [0,0] on platform moss (2000 blocks)
+[2026/01/03 09:00:20] [Plugin.mapart] [INFO] phase SELECT -> INSPECT (#j0009 sample [0,0])
+[2026/01/03 09:00:25] [Plugin.mapart] [INFO] phase INSPECT -> STOCK_CHECK (#j0009 sample [0,0])
+[2026/01/03 09:00:30] [Plugin.mapart] [WARN] #j0009 sample [0,0] short of materials: white_carpet x50
+[2026/01/03 09:00:30] [Plugin.mapart] [WARN] [mapart] ALERT Materials short: sample: #j0009 sample [0,0] is waiting for materials:
+[2026/01/03 09:00:30] [Plugin.mapart] [INFO] phase STOCK_CHECK -> SELECT
+[2026/01/03 09:00:30] [Plugin.mapart] [INFO] phase SELECT -> IDLE
+[2026/01/03 09:05:30] [Plugin.mapart] [INFO] phase IDLE -> SELECT
+[2026/01/03 09:05:30] [Plugin.mapart] [INFO] selected #j0009 sample [0,0] on platform moss (2000 blocks, re-checking materials)
+[2026/01/03 09:05:30] [Plugin.mapart] [INFO] phase SELECT -> INSPECT (#j0009 sample [0,0])
+[2026/01/03 09:05:35] [Plugin.mapart] [INFO] phase INSPECT -> STOCK_CHECK (#j0009 sample [0,0])
+[2026/01/03 09:06:35] [Plugin.mapart] [INFO] [mapart] Materials available: #j0009 sample [0,0]: continuing.
+[2026/01/03 09:06:35] [Plugin.mapart] [INFO] phase STOCK_CHECK -> GEAR (#j0009 sample [0,0])
+[2026/01/03 09:06:35] [Plugin.mapart] [INFO] phase GEAR -> RESTOCK (#j0009 sample [0,0])
+[2026/01/03 09:06:35] [Plugin.mapart] [INFO] restock: 8 lanes left, load covers 2 + 10 cells of the next, withdraw {minecraft:white_carpet=510}
+[2026/01/03 09:07:35] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0009 sample [0,0])
+[2026/01/03 09:10:00] [MapArt-Bot] [INFO] Lane 0: 250 placed, 0 skipped of 250 in 2800 ticks; clicks 250: 250 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=250, late=0, rejected=0, unknown=0, rtt=3t]
+[2026/01/03 09:12:00] [Plugin.mapart] [INFO] paused: restarting for a new build
+[2026/01/03 09:12:00] [Plugin.mapart] [INFO] [mapart] Paused: restarting for a new build
+[2026/01/03 09:12:02] [Client] [INFO] Disconnecting from server...
+[2026/01/03 09:12:02] [Plugin.mapart] [INFO] bot ticks stopped (BUILD)
+[2026/01/03 09:12:02] [Client] [INFO] Disconnected: Manual Disconnect

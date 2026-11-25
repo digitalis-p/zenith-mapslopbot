@@ -1,0 +1,82 @@
+# Edits to the LOCAL TEST WORLD COPY (never the owner's save), applied by prepare-site.sh after
+# reset-world.sh + start.sh. RCON commands, one per line; '@' lines are rcon.py directives.
+# Every edit is idempotent: chests use 'keep' (never replace a stocked chest), names/signs are merged.
+
+forceload add -32 -80 16 -65
+@wait-loaded -28 -71
+@wait-loaded 2 -68
+@wait-loaded 9 -68
+
+# --- New labelled supply chests (not on 2b2t): double chests at y174 z-68 facing north,
+# --- on the walkway east of the map output chest. Standing signs on top, chest titles via CustomName.
+setblock 2 174 -68 minecraft:chest[facing=north,type=left]{CustomName:"Tools"} keep
+setblock 3 174 -68 minecraft:chest[facing=north,type=right]{CustomName:"Tools"} keep
+setblock 2 175 -68 minecraft:spruce_sign[rotation=0]{front_text:{messages:["Tools","pickaxe axe","shovel","(test world)"]}} keep
+setblock 4 174 -68 minecraft:chest[facing=north,type=left]{CustomName:"Food"} keep
+setblock 5 174 -68 minecraft:chest[facing=north,type=right]{CustomName:"Food"} keep
+setblock 4 175 -68 minecraft:spruce_sign[rotation=0]{front_text:{messages:["Food","golden carrots","","(test world)"]}} keep
+setblock 6 174 -68 minecraft:chest[facing=north,type=left]{CustomName:"Bot Kit"} keep
+setblock 7 174 -68 minecraft:chest[facing=north,type=right]{CustomName:"Bot Kit"} keep
+setblock 6 175 -68 minecraft:spruce_sign[rotation=0]{front_text:{messages:["Bot Kit","boots, spares","","(test world)"]}} keep
+setblock 8 174 -68 minecraft:chest[facing=north,type=left]{CustomName:"Return"} keep
+setblock 9 174 -68 minecraft:chest[facing=north,type=right]{CustomName:"Return"} keep
+setblock 8 175 -68 minecraft:spruce_sign[rotation=0]{front_text:{messages:["Return / junk","not connected","to the sorter","(test world)"]}} keep
+
+# --- Existing double chest = locked-map OUTPUT; label it (chest title + the blank wall sign above).
+data merge block 0 174 -68 {CustomName:"Map Output"}
+data merge block 1 174 -68 {CustomName:"Map Output"}
+data merge block -1 175 -68 {front_text:{messages:["Map Output","locked maps","",""]}}
+setblock 0 175 -68 minecraft:spruce_sign[rotation=0]{front_text:{messages:["Map Output","locked maps","",""]}} keep
+
+# --- Existing utility chests: titles matching their signs.
+data merge block -1 174 -72 {CustomName:"Maps + Panes"}
+data merge block 0 174 -72 {CustomName:"Maps + Panes"}
+data merge block -1 176 -72 {CustomName:"EXP Bottles"}
+data merge block 0 176 -72 {CustomName:"EXP Bottles"}
+
+# --- 8 unlabelled moss sorter columns become terracotta columns (floor label at y173 z-70,
+# --- like the base's own floor labels). Matches config/moss-materials.json.
+setblock -28 173 -70 minecraft:white_terracotta
+setblock -27 173 -70 minecraft:light_gray_terracotta
+setblock -26 173 -70 minecraft:gray_terracotta
+setblock -25 173 -70 minecraft:black_terracotta
+setblock -24 173 -70 minecraft:brown_terracotta
+setblock -23 173 -70 minecraft:red_terracotta
+setblock -22 173 -70 minecraft:orange_terracotta
+setblock -21 173 -70 minecraft:yellow_terracotta
+
+forceload remove -32 -80 16 -65
+
+# --- (append to testserver/examples/world-edits.moss.txt) the owner's real supply column, from the 2026-10-11
+# --- download; the old download lacks it, so a reset world needs it re-applied.
+forceload add 48 -80 63 -65
+@wait-loaded 52 -72
+
+# --- the owner's supply column (2b2t download 2026-10-11): crafting table + 4-high anvil tower,
+# --- chests facing east (anvils/xp/glass panes/food/tools doubles, maps/output singles), wall signs.
+setblock 52 174 -74 minecraft:crafting_table keep
+setblock 52 175 -74 minecraft:anvil[facing=north] keep
+setblock 52 176 -74 minecraft:anvil[facing=north] keep
+setblock 52 177 -74 minecraft:anvil[facing=north] keep
+setblock 52 178 -74 minecraft:anvil[facing=north] keep
+setblock 52 174 -73 minecraft:chest[facing=east,type=left,waterlogged=false] keep
+setblock 52 174 -72 minecraft:chest[facing=east,type=right,waterlogged=false] keep
+setblock 52 174 -71 minecraft:chest[facing=south,type=single,waterlogged=false] keep
+setblock 52 175 -73 minecraft:chest[facing=east,type=left,waterlogged=false] keep
+setblock 52 175 -72 minecraft:chest[facing=east,type=right,waterlogged=false] keep
+setblock 52 175 -71 minecraft:chest[facing=south,type=single,waterlogged=false] keep
+setblock 52 176 -73 minecraft:chest[facing=east,type=left,waterlogged=false] keep
+setblock 52 176 -72 minecraft:chest[facing=east,type=right,waterlogged=false] keep
+setblock 52 177 -73 minecraft:chest[facing=east,type=left,waterlogged=false] keep
+setblock 52 177 -72 minecraft:chest[facing=east,type=right,waterlogged=false] keep
+setblock 52 178 -73 minecraft:chest[facing=east,type=left,waterlogged=false] keep
+setblock 52 178 -72 minecraft:chest[facing=east,type=right,waterlogged=false] keep
+setblock 53 174 -72 minecraft:oak_wall_sign[facing=east,waterlogged=false]{front_text:{messages:["anvils","","",""]},back_text:{messages:["","","",""]}} keep
+setblock 53 174 -71 minecraft:spruce_wall_sign[facing=east,waterlogged=false]{front_text:{messages:["maps","","",""]},back_text:{messages:["","","",""]}} keep
+setblock 53 175 -72 minecraft:spruce_wall_sign[facing=east,waterlogged=false]{front_text:{messages:["xp","","",""]},back_text:{messages:["","","",""]}} keep
+setblock 53 175 -71 minecraft:spruce_wall_sign[facing=east,waterlogged=false]{front_text:{messages:["output","","",""]},back_text:{messages:["","","",""]}} keep
+setblock 53 176 -72 minecraft:spruce_wall_sign[facing=east,waterlogged=false]{front_text:{messages:["glass panes","","",""]},back_text:{messages:["","","",""]}} keep
+setblock 53 177 -72 minecraft:spruce_wall_sign[facing=east,waterlogged=false]{front_text:{messages:["food","","",""]},back_text:{messages:["","","",""]}} keep
+setblock 53 178 -72 minecraft:spruce_wall_sign[facing=east,waterlogged=false]{front_text:{messages:["tools","","",""]},back_text:{messages:["","","",""]}} keep
+
+forceload remove 48 -80 63 -65

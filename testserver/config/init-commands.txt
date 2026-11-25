@@ -1,0 +1,16 @@
+# RCON commands start.sh runs after every start (all idempotent). '#' starts a comment.
+# Gamerule ids are the 1.21.11 snake_case names (e.g. random_tick_speed, not randomTickSpeed).
+
+# 2b2t runs hard; the download stored Easy.
+difficulty hard
+# The downloader saved random_tick_speed=0; vanilla/2b2t use 3 (crops, grass, leaf decay, copper).
+gamerule random_tick_speed 3
+# New players (the offline bot) spawn exactly on the world spawn, which the download left on the
+# moss walkway where the owner stood. Without this they land up to 10 blocks away, possibly over the void.
+gamerule respawn_radius 0
+# Deterministic tests: no hostile mobs, phantoms, raids or traders. 2b2t has all of them.
+# Set these to true to rehearse with mobs.
+gamerule spawn_monsters false
+gamerule spawn_phantoms false
+gamerule spawn_patrols false
+gamerule spawn_wandering_traders false

@@ -1,0 +1,44 @@
+[2026/01/04 08:00:00] [Proxy] [INFO] Starting ZenithProxy-3.7.2+java.1.21.4
+[2026/01/04 08:00:01] [Plugin.mapart] [INFO] Map art plugin 0.1.0 (eee5555) loaded (built 2026-01-04 07:59 UTC; builder on, data in plugins/mapart)
+[2026/01/04 08:00:10] [Plugin.mapart] [INFO] bot ticks starting (IDLE)
+[2026/01/04 08:00:10] [Plugin.mapart] [INFO] engine ready (idle)
+[2026/01/04 08:00:20] [Plugin.mapart] [INFO] phase IDLE -> SELECT
+[2026/01/04 08:00:20] [Plugin.mapart] [INFO] selected #j0003 discon [0,0] on platform moss (500 blocks)
+[2026/01/04 08:00:20] [Plugin.mapart] [INFO] phase SELECT -> INSPECT (#j0003 discon [0,0])
+[2026/01/04 08:00:25] [Plugin.mapart] [INFO] phase INSPECT -> STOCK_CHECK (#j0003 discon [0,0])
+[2026/01/04 08:00:30] [Plugin.mapart] [INFO] phase STOCK_CHECK -> GEAR (#j0003 discon [0,0])
+[2026/01/04 08:00:30] [Plugin.mapart] [INFO] phase GEAR -> RESTOCK (#j0003 discon [0,0])
+[2026/01/04 08:00:30] [Plugin.mapart] [INFO] restock: 2 lanes left, load covers 2, withdraw {minecraft:white_carpet=500}
+[2026/01/04 08:01:00] [Plugin.mapart] [INFO] phase RESTOCK -> BUILD (#j0003 discon [0,0])
+[2026/01/04 08:05:00] [Client] [INFO] Disconnecting from server...
+[2026/01/04 08:05:00] [Client] [INFO] Disconnected: io.netty.channel.unix.Errors$NativeIoException: recvAddress(..) failed with error(-104): Connection reset by peer
+[2026/01/04 08:05:00] [Plugin.mapart] [INFO] bot ticks stopped (BUILD)
+[2026/01/04 08:05:00] [Client] [ERROR] Exception during client disconnect
+[2026/01/04 08:05:07] [Client] [INFO] Disconnecting from server...
+[2026/01/04 08:05:07] [Client] [INFO] Disconnected: You are already connected to this proxy!
+[2026/01/04 08:05:14] [Client] [INFO] Disconnected: You are already connected to this proxy!
+[2026/01/04 08:06:00] [Client] [INFO] Connecting to localhost:25565...
+[2026/01/04 08:06:01] [Client] [INFO] Server teleport 1 to: 3.50000000, 64.00000000, -7.50000000
+[2026/01/04 08:06:30] [Plugin.mapart] [INFO] bot ticks starting (BUILD, #j0003 discon [0,0])
+[2026/01/04 08:08:00] [MapArt-Bot] [INFO] Lane 0: 250 placed, 0 skipped of 250 in 1800 ticks; clicks 250: 250 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=250, late=0, rejected=0, unknown=0, rtt=3t]
+[2026/01/04 08:08:30] [Server] [INFO] Spectator disconnected: UUID: 00000000-0000-0000-0000-000000000000, Username: Tester, Address: localhost/127.0.0.1:4000, Reason Transferring to localhost:25567
+[2026/01/04 08:08:30] [Plugin.mapart] [INFO] bot ticks stopped (BUILD)
+[2026/01/04 08:09:30] [Server] [INFO] Player disconnected: UUID: 00000000-0000-0000-0000-000000000000, Username: Tester, Address: localhost/127.0.0.1:4000, Reason Transferring to localhost:25567
+[2026/01/04 08:09:30] [Plugin.mapart] [INFO] bot ticks starting (BUILD, #j0003 discon [0,0])
+[2026/01/04 08:10:00] [MapArt-Bot] [INFO] Lane 1: 250 placed, 0 skipped of 250 in 600 ticks; clicks 250: 250 confirmed, 0 late, 0 rejected, 0 dropped, 0 unknown; confirm p50 3 p95 6 t; ack p50 4 p95 7 t; window 40 t; AdaptivePacer[interval=1 in [1,4], streak=8/16, confirmed=500, late=0, rejected=0, unknown=0, rtt=3t]
+[2026/01/04 08:10:00] [Plugin.mapart] [INFO] phase BUILD -> VERIFY (#j0003 discon [0,0])
+[2026/01/04 08:10:00] [Plugin.mapart] [INFO] phase VERIFY -> FILL_MAP (#j0003 discon [0,0])
+[2026/01/04 08:10:10] [Plugin.mapart] [INFO] phase FILL_MAP -> CHECK_MAP (#j0003 discon [0,0])
+[2026/01/04 08:10:10] [Plugin.mapart] [INFO] phase CHECK_MAP -> LOCK (#j0003 discon [0,0])
+[2026/01/04 08:10:20] [Plugin.mapart] [INFO] phase LOCK -> RENAME (#j0003 discon [0,0])
+[2026/01/04 08:10:30] [Plugin.mapart] [INFO] phase RENAME -> STORE (#j0003 discon [0,0])
+[2026/01/04 08:10:35] [Plugin.mapart] [INFO] #j0003 discon [0,0] stored in [4,71,5]
+[2026/01/04 08:10:35] [Plugin.mapart] [INFO] phase STORE -> NUKE (#j0003 discon [0,0])
+[2026/01/04 08:10:40] [Plugin.mapart] [INFO] phase NUKE -> CLEAR (#j0003 discon [0,0])
+[2026/01/04 08:11:00] [Plugin.mapart] [INFO] phase CLEAR -> WAIT_CLEAR (#j0003 discon [0,0])
+[2026/01/04 08:12:00] [Plugin.mapart] [INFO] phase WAIT_CLEAR -> FINISH_TILE (#j0003 discon [0,0])
+[2026/01/04 08:12:05] [Plugin.mapart] [INFO] job j0003 DONE
+[2026/01/04 08:12:05] [Plugin.mapart] [INFO] phase FINISH_TILE -> SELECT
+[2026/01/04 08:12:05] [Plugin.mapart] [INFO] phase SELECT -> IDLE
+[2026/01/04 08:13:00] [Plugin.mapart] [INFO] keep-alive: idle 55 s in IDLE; swinging every 55 s
+[2026/01/04 08:15:00] [Chat] [INFO] <Someone> bye
